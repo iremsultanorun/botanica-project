@@ -1,0 +1,10 @@
+@import './bootstrap.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* color */
+.left-1 {
+  left: 5rem;
+}
+
+.top-1 {
+  top: 3rem;
+}/*# sourceMappingURL=custom.css.map */
