@@ -1,0 +1,20 @@
+.text{
+    color: $black-500;
+    font-size: 13px;
+}
+.nav-text{
+    &.active{
+color: $green-200 !important;
+    }
+    font-weight: 500;
+    font-size: 13px;
+}
+.sm-text{
+    font-size: 12px;
+    color: $black-500;
+}
+
+.sm-bold-title{
+    font-size: 16px;
+    color: $black;
+}

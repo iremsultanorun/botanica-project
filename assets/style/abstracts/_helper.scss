@@ -1,15 +1,84 @@
 // custom attribute generator
 $custom: (
-    left:("left-1", 5rem),
-    top:("top-1", 3rem),
+    // renkler
+    bg-green-900:(background-color, $green-900),
+    bg-green-500:(background-color, $green-500),
+    bg-green-300:(background-color, $green-300),
+    bg-green-200:(background-color, $green-200),
+    bg-green-100:(background-color, $green-100),
+
+    // boyutlar
+    w-10:(width, 10rem),
+    w-20:(width, 13rem),
+    h-40:(height,46px ),
+    w-40:(width,46px ),
+    w-80:(width, 80%),
+   h-50:(height, 50px),
+// font özellikleri
+   bold-700:(font-weight, 700),
+    fs-9:(font-size, 9px),
+    fs-7:(font-size,14px),
+    fs-8:(font-size,13px),
+    fs-11:(font-size,11px),
+
+    // hizalamalar
+    top-15:(top,9%)
+
 );
 
+
 @for $i from 1 through length($custom) {
-   $property : nth(map-keys($custom), $i); //property
-    $value: map-get($custom, $property);//values
-    $name: nth($value,1); //1. value
-    $property-value: nth($value,2); //2. value
-    .#{$name}{
-       #{$property}: $property-value;
+    $name: nth(map-keys($custom), $i);
+    $value: map-get($custom, $name); 
+
+    $property: nth($value, 1); 
+    $property-value: nth($value, 2); 
+
+    .#{$name} {
+        #{$property}: $property-value;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar,.navbarr{
+height: 110px;
+}
+
+
+.navbar-item {
+    &.active .nav-text {
+        color: $green-200;
+    }
+height: 110px;
+
+    width: auto;
+
+   &:hover .dropdown-menuu {
+        visibility: visible;
+        top: 110px;
+    }
+
+    .dropdown-menuu {
+        width: 100%;
+        height: 400px !important;
+        position: absolute;
+        left: 0;
+        top: 120px;
+        visibility: hidden;
+        transition: top .3s ease-out;
     }
 }
