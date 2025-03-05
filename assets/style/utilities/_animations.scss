@@ -24,3 +24,19 @@
     }
    
 }
+.search-cont{
+    .floating-label{
+        top: 18px;
+        left:11px;
+        transition: all .3s ease;
+    }
+    .form-control:focus + .floating-label{
+           top: 2px;
+          font-size: 10px;
+          margin-bottom: 20px;
+    }
+   .form-control:focus{
+    outline: none !important;
+    border:none !important;
+   }
+}
