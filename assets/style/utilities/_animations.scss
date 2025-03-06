@@ -1,42 +1,47 @@
-.shake-item{
-    width: 10rem;
-    height: 10rem;
-    background-color: red;
-    &:hover{
-        animation:shake-animation .8s ease infinite;
+.shake-item-cont {
+    &:hover .shake-item {
+        animation: shake-animation .8s ease infinite;
     }
 }
+
 @keyframes shake-animation {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    25%{
-        transform: translateX(1rem);
+
+    25% {
+        transform: translateX(3px);
     }
-    50%{
-        transform: translateX(-1rem);
+
+    50% {
+        transform: translateX(-3px);
     }
-    75%{
-        transform: translateX(1rem);
+
+    75% {
+        transform: translateX(3px);
     }
-    100%{
+
+    100% {
         transform: translateX(0rem);
     }
-   
+
 }
-.search-cont{
-    .floating-label{
+
+.search-cont {
+    .floating-label {
         top: 18px;
-        left:11px;
+        left: 11px;
         transition: all .3s ease;
     }
-    .form-control:focus + .floating-label{
-           top: 2px;
-          font-size: 10px;
-          margin-bottom: 20px;
+
+    .form-control:focus+.floating-label {
+        top: 2px;
+        font-size: 10px;
+        margin-bottom: 20px;
     }
-   .form-control:focus{
-    outline: none !important;
-    border:none !important;
-   }
+
+    .form-control:focus {
+        outline: none !important;
+        border: none !important;
+    }
 }
