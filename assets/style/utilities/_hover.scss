@@ -38,22 +38,33 @@
     }
 }
 
-.rotate-dots{
-    transform: rotate(0deg);
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    border: 2px dashed $green-200;
-    transition: transform .3s ease-out, border .3s ease-out;
-    &:hover{
+.rotate-cont{
+    .rotate-dots{
+        transform: rotate(0deg);
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+       border: 2px dashed $green-200;
+        transition: transform .3s ease-out, border .3s ease-out;
+    }
+    &:hover .rotate-dots{
         border: 2px dashed $green-500;
         transform: rotate(360deg);
     }
 }
+
 .bg-green-900-hover{
     transition: background-color .2s ease-in;
+    .shop-now-icon-cont{
+        background-color: $white;
+        transition: background-color .2s ease-in;
+    }
     &:hover{
         background-color: $green-900;
+        .shop-now-icon-cont{
+            background-color: $green-200;
+        }
     }
+
 }
 

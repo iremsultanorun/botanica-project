@@ -25,12 +25,44 @@
   background-color: #E9F1EF;
 }
 
+.bg-deals-slider-green {
+  background-color: #E9F6D9;
+}
+
+.bg-deals-slider-pink {
+  background-color: #FFE7E6;
+}
+
+.bg-deals-slider-purple {
+  background-color: #E1E4FE;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
 .text-green-500 {
   color: #016839;
 }
 
+.h-2 {
+  height: 2px;
+}
+
+.h-4 {
+  height: 4px;
+}
+
 .w-1 {
   width: 0.8rem;
+}
+
+.w-3 {
+  width: 3rem;
+}
+
+.h-3 {
+  height: 3rem;
 }
 
 .h-1 {
@@ -49,12 +81,20 @@
   width: 33%;
 }
 
+.w-60 {
+  width: 210rem;
+}
+
 .h-46 {
   height: 46px;
 }
 
 .w-40 {
   width: 40%;
+}
+
+.wy-30 {
+  width: 30%;
 }
 
 .w-46 {
@@ -105,12 +145,20 @@
   height: 50%;
 }
 
+.h-120 {
+  height: 31rem;
+}
+
 .h-130 {
-  height: 20rem;
+  height: 23rem;
 }
 
 .w-130 {
-  width: 20rem;
+  width: 23rem;
+}
+
+.w-120 {
+  width: 90rem;
 }
 
 .bold-700 {
@@ -125,8 +173,12 @@
   font-size: 14px;
 }
 
-.fs-8 {
+.fs-13 {
   font-size: 13px;
+}
+
+.fs-15 {
+  font-size: 15px;
 }
 
 .fs-12 {
@@ -150,11 +202,27 @@
 }
 
 .top-85 {
-  top: 85%;
+  top: 15.5rem;
 }
 
 .topn-4 {
   top: -4px;
+}
+
+.top-12 {
+  top: 12rem;
+}
+
+.top-13 {
+  top: 12.5rem;
+}
+
+.start-5-5 {
+  left: 5.5rem;
+}
+
+.start-6 {
+  left: 6rem;
 }
 
 .endn-3 {
@@ -170,7 +238,7 @@
 }
 
 .startn-5 {
-  left: -2.8rem;
+  left: -4.6rem;
 }
 
 .bottomn-8 {
@@ -209,6 +277,14 @@
   transform: rotate(48deg);
 }
 
+.zn-1 {
+  z-index: -1;
+}
+
+.zn-2 {
+  z-index: -2;
+}
+
 .navbar, .navbarr {
   height: 110px;
 }
@@ -232,6 +308,10 @@
   top: 120px;
   visibility: hidden;
   transition: top 0.3s ease-out;
+}
+
+.deals-slider-wrapper {
+  transform: translateX(-27%);
 }
 
 .shake-item-cont:hover .shake-item {
@@ -307,15 +387,15 @@
   transform: scale(1.1);
 }
 
-.rotate-dots {
+.rotate-cont .rotate-dots {
   transform: rotate(0deg);
-  width: 10rem;
-  height: 10rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   border: 2px dashed #84D812;
   transition: transform 0.3s ease-out, border 0.3s ease-out;
 }
-.rotate-dots:hover {
+.rotate-cont:hover .rotate-dots {
   border: 2px dashed #016839;
   transform: rotate(360deg);
 }
@@ -323,8 +403,15 @@
 .bg-green-900-hover {
   transition: background-color 0.2s ease-in;
 }
+.bg-green-900-hover .shop-now-icon-cont {
+  background-color: #ffffff;
+  transition: background-color 0.2s ease-in;
+}
 .bg-green-900-hover:hover {
   background-color: #00241B;
+}
+.bg-green-900-hover:hover .shop-now-icon-cont {
+  background-color: #84D812;
 }
 
 * {
@@ -349,6 +436,7 @@ p {
 .text {
   color: #434343;
   font-size: 13px;
+  line-height: 1.5rem;
 }
 
 .nav-text {
