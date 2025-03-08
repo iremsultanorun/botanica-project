@@ -45,16 +45,32 @@
   color: #016839;
 }
 
-.h-2 {
-  height: 2px;
+.w-1-5 {
+  width: 1.1rem;
 }
 
-.h-4 {
-  height: 4px;
+.h-1-5 {
+  height: 1.1rem;
 }
 
 .w-1 {
   width: 0.8rem;
+}
+
+.h-1 {
+  height: 0.8rem;
+}
+
+.w-05 {
+  width: 0.4rem;
+}
+
+.h-05 {
+  height: 0.4rem;
+}
+
+.h-2 {
+  height: 2px;
 }
 
 .w-3 {
@@ -63,10 +79,6 @@
 
 .h-3 {
   height: 3rem;
-}
-
-.h-1 {
-  height: 0.8rem;
 }
 
 .w-10 {
@@ -155,6 +167,10 @@
 
 .w-130 {
   width: 23rem;
+}
+
+.w-110 {
+  width: 64rem;
 }
 
 .w-120 {
@@ -261,6 +277,10 @@
   border: 1.5px solid #072E1A;
 }
 
+.border-green-500 {
+  border: 1px solid #016839;
+}
+
 .rounded-30 {
   border-radius: 30%;
 }
@@ -312,6 +332,25 @@
 
 .deals-slider-wrapper {
   transform: translateX(-27%);
+}
+
+.arrow.arrow-1 {
+  transform: rotate(90deg);
+}
+.arrow.arrow-2 {
+  transform: rotate(-90deg);
+}
+.arrow .line {
+  width: 4rem;
+  height: 1px;
+  background-color: black;
+}
+.arrow .line.line-1 {
+  transform: rotate(45deg);
+}
+.arrow .line.line-2 {
+  transform: rotate(-45deg);
+  margin-left: -5px;
 }
 
 .shake-item-cont:hover .shake-item {
