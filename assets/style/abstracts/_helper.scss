@@ -60,6 +60,7 @@ h-10:(height, 10rem),
     // font özellikleri
     bold-700:(font-weight, 700),
     fs-9:(font-size, 9px),
+    fs-10:(font-size, 10px),
     fs-7:(font-size, 14px),
     fs-13:(font-size, 13px),
     fs-15:(font-size, 15px),
@@ -87,6 +88,7 @@ h-10:(height, 10rem),
     mt-13:(margin-top, 13rem),
     mt-6:(margin-top, 6rem),
     mb-6:(margin-bottom, 6rem),
+    mx-6:(margin,0 6rem),
     mtn-6:(margin-top, -6rem),
 
 
@@ -238,4 +240,13 @@ h-10:(height, 10rem),
 }
 .outline-dashed{
     border-bottom:3px dashed $green-200;
+}
+
+.blog-card{
+    transition: transform .3s ease;
+
+    .blog-card:hover{
+        transform: translateY(-10px);
+ 
+       }
 }

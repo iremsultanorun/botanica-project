@@ -36,6 +36,7 @@
 }
 
 .scale-effect-hover-cont {
+    overflow: hidden;
     .scale-item {
         transition: transform .3s ease-out;
     }

@@ -217,6 +217,10 @@
   font-size: 9px;
 }
 
+.fs-10 {
+  font-size: 10px;
+}
+
 .fs-7 {
   font-size: 14px;
 }
@@ -319,6 +323,10 @@
 
 .mb-6 {
   margin-bottom: 6rem;
+}
+
+.mx-6 {
+  margin: 0 6rem;
 }
 
 .mtn-6 {
@@ -439,6 +447,13 @@
   border-bottom: 3px dashed #84D812;
 }
 
+.blog-card {
+  transition: transform 0.3s ease;
+}
+.blog-card .blog-card:hover {
+  transform: translateY(-10px);
+}
+
 .shake-item-cont:hover .shake-item {
   animation: shake-animation 0.8s ease infinite;
 }
@@ -526,6 +541,9 @@
   color: #ffffff;
 }
 
+.scale-effect-hover-cont {
+  overflow: hidden;
+}
 .scale-effect-hover-cont .scale-item {
   transition: transform 0.3s ease-out;
 }
