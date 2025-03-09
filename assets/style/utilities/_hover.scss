@@ -68,3 +68,9 @@
 
 }
 
+.box-shadow-hover{
+    &:hover{
+        box-shadow: 12px 5px $green-200;
+        border-radius: 30%;
+    }
+}
