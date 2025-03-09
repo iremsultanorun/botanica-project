@@ -69,11 +69,13 @@ h-10:(height, 10rem),
     // boşluklar
     top-15:(top, 9%),
     top-25:(top, 25%),
+    top-40:(top, 40%),
     bottom-23:(bottom, 10%),
     top-85:(top, 15.5rem),
     topn-4:(top, -4px),
     top-12:(top, 12rem),
     top-13:(top, 12.5rem),
+    start-2:(left, 2rem),
     start-5-5:(left, 5.5rem),
     start-6:(left, 6rem),
     endn-3:(right, -3px),
@@ -93,6 +95,8 @@ h-10:(height, 10rem),
     border-green-500:(border, 1px solid $green-500),
     rounded-30:(border-radius, 30%),
     rounded-10:(border-radius, 10%),
+ 
+
 
     // line height
     lh-2:(line-height, 2rem),

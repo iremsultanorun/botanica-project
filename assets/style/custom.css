@@ -249,6 +249,10 @@
   top: 25%;
 }
 
+.top-40 {
+  top: 40%;
+}
+
 .bottom-23 {
   bottom: 10%;
 }
@@ -267,6 +271,10 @@
 
 .top-13 {
   top: 12.5rem;
+}
+
+.start-2 {
+  left: 2rem;
 }
 
 .start-5-5 {
@@ -507,7 +515,7 @@
   transition: color 0.2s ease-in;
 }
 .text-green-500-hover:hover {
-  color: #016839;
+  color: #016839 !important;
 }
 
 .bg-green-500-hover {
@@ -566,6 +574,55 @@
   border-radius: 30%;
 }
 
+.smoothie-cont-1:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  animation: height-animation 2s ease infinite;
+}
+.smoothie-cont-1:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  animation: width-animation 2s ease infinite;
+}
+
+@keyframes height-animation {
+  0% {
+    padding: 15rem 0;
+    opacity: 0%;
+    top: 0%;
+  }
+  50% {
+    top: 50%;
+    padding: 0.1px 0;
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes width-animation {
+  0% {
+    padding: 0 20rem;
+    opacity: 0%;
+    left: 0%;
+  }
+  50% {
+    left: 50%;
+    padding: 0 0.1px;
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
 * {
   padding: 0;
   margin: 0;

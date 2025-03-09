@@ -1,82 +1,151 @@
 //navdaki hoverlar
-.text-green-200-hover{
+.text-green-200-hover {
     transition: color .2s ease-in;
-&:hover{
-    color: $green-200;
+
+    &:hover {
+        color: $green-200;
+    }
 }
-}
-.bg-green-200-hover{
+
+.bg-green-200-hover {
     cursor: pointer;
     transition: background-color .2s ease-in;
-    &:hover{
+
+    &:hover {
         background-color: $green-200;
     }
 }
+
 //top categories
-.text-green-500-hover{
+.text-green-500-hover {
     transition: color .2s ease-in;
-&:hover{
-    color: $green-500;
+
+    &:hover {
+        color: $green-500 !important;
+    }
 }
-}
+
 // headerdaki slaytın hoverı
-.bg-green-500-hover{
+.bg-green-500-hover {
     transition: background-color .2s ease-out;
-&:hover{
-    background-color: $green-500 !important;
-    color: $white;
+
+    &:hover {
+        background-color: $green-500 !important;
+        color: $white;
+    }
 }
-}
-.scale-effect-hover-cont{
-    .scale-item{
-       
+
+.scale-effect-hover-cont {
+    .scale-item {
         transition: transform .3s ease-out;
     }
-  
-    &:hover .scale-item{
+
+    &:hover .scale-item {
         transform: scale(1.1);
     }
 }
 
-.rotate-cont{
-    .rotate-dots{
+.rotate-cont {
+    .rotate-dots {
         transform: rotate(0deg);
         width: 4rem;
         height: 4rem;
         border-radius: 50%;
-       border: 2px dashed $green-200;
+        border: 2px dashed $green-200;
         transition: transform .3s ease-out, border .3s ease-out;
     }
-    &:hover .rotate-dots{
+
+    &:hover .rotate-dots {
         border: 2px dashed $green-500;
         transform: rotate(360deg);
     }
 }
 
-.bg-green-900-hover{
+.bg-green-900-hover {
     transition: background-color .2s ease-in;
-    .shop-now-icon-cont{
+
+    .shop-now-icon-cont {
         background-color: $white;
         transition: background-color .2s ease-in;
     }
-    &:hover{
+
+    &:hover {
         background-color: $green-900;
-        .shop-now-icon-cont{
+
+        .shop-now-icon-cont {
             background-color: $green-200;
         }
     }
 
 }
 
-.box-shadow-hover{
+.box-shadow-hover {
     cursor: pointer;
     transition: box-shadow .3s ease;
-    &:hover{
-        box-shadow: 12px 5px $green-200,rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+
+    &:hover {
+        box-shadow: 12px 5px $green-200, rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
         border-radius: 30%;
     }
 }
-.active-box-shadow{
-    box-shadow: 12px 5px $green-200,rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+
+.active-box-shadow {
+    box-shadow: 12px 5px $green-200, rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
     border-radius: 30%;
+}
+
+.smoothie-cont-1:hover {
+    &::before {
+        content: "";
+        position: absolute;
+ top: 50%;
+        left: 0;
+        width:100%;
+        background-color: $white;
+        animation: height-animation 2s ease infinite ;
+    
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        background-color: $white;
+        animation: width-animation 2s ease infinite ;
+    }
+}
+
+@keyframes height-animation {
+    0%{
+        padding: 15rem 0;
+        opacity: 0%;
+        top: 0%;
+       
+    }
+    50%{
+        top: 50%;
+padding: .1px 0;
+        opacity: 50%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+@keyframes width-animation {
+    0%{
+        padding:0 20rem;
+        opacity: 0%;
+        left: 0%;
+       
+    }
+    50%{
+        left: 50%;
+padding:0 .1px;
+        opacity: 50%;
+    }
+    100%{
+        opacity: 0%;
+    }
 }
