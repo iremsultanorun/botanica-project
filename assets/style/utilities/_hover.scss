@@ -69,8 +69,14 @@
 }
 
 .box-shadow-hover{
+    cursor: pointer;
+    transition: box-shadow .3s ease;
     &:hover{
-        box-shadow: 12px 5px $green-200;
+        box-shadow: 12px 5px $green-200,rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
         border-radius: 30%;
     }
+}
+.active-box-shadow{
+    box-shadow: 12px 5px $green-200,rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+    border-radius: 30%;
 }

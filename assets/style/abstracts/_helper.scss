@@ -12,6 +12,7 @@ $custom: (
     bg-deals-slider-purple:(background-color, $deals-slider-purple),
     bg-white:(background-color, $white),
     text-green-500:(color, $green-500),
+    text-green-200:(color, $green-200),
 
 
     // boyutlar
@@ -26,6 +27,7 @@ $custom: (
     
     w-3:(width, 3rem),
     h-3:(height, 3rem),
+    w-7:(width, 7rem),
     w-8:(width, 8rem),
     h-8:(height, 8rem),
     w-10:(width, 10rem),
@@ -67,6 +69,7 @@ h-10:(height, 10rem),
     // boşluklar
     top-15:(top, 9%),
     top-25:(top, 25%),
+    bottom-23:(bottom, 10%),
     top-85:(top, 15.5rem),
     topn-4:(top, -4px),
     top-12:(top, 12rem),
@@ -81,7 +84,9 @@ h-10:(height, 10rem),
     bottom-1-5:(bottom, 1.5rem),
     mt-13:(margin-top, 13rem),
     mt-6:(margin-top, 6rem),
+    mb-6:(margin-bottom, 6rem),
     mtn-6:(margin-top, -6rem),
+
 
     // border
     border-light-500:(border, 1.5px solid $green-700),

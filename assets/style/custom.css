@@ -45,6 +45,10 @@
   color: #016839;
 }
 
+.text-green-200 {
+  color: #84D812;
+}
+
 .w-1-5 {
   width: 1.1rem;
 }
@@ -83,6 +87,10 @@
 
 .h-3 {
   height: 3rem;
+}
+
+.w-7 {
+  width: 7rem;
 }
 
 .w-8 {
@@ -241,6 +249,10 @@
   top: 25%;
 }
 
+.bottom-23 {
+  bottom: 10%;
+}
+
 .top-85 {
   top: 15.5rem;
 }
@@ -295,6 +307,10 @@
 
 .mt-6 {
   margin-top: 6rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
 }
 
 .mtn-6 {
@@ -419,6 +435,10 @@
   animation: shake-animation 0.8s ease infinite;
 }
 
+.shake-item-cont-2:hover .shake-item-2 {
+  animation: shake-animation-2 0.8s ease;
+}
+
 @keyframes shake-animation {
   0% {
     transform: translateX(0);
@@ -434,6 +454,23 @@
   }
   100% {
     transform: translateX(0rem);
+  }
+}
+@keyframes shake-animation-2 {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 .search-cont .floating-label {
@@ -515,8 +552,17 @@
   background-color: #84D812;
 }
 
+.box-shadow-hover {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
 .box-shadow-hover:hover {
-  box-shadow: 12px 5px #84D812;
+  box-shadow: 12px 5px #84D812, rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+  border-radius: 30%;
+}
+
+.active-box-shadow {
+  box-shadow: 12px 5px #84D812, rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
   border-radius: 30%;
 }
 
