@@ -9,6 +9,10 @@
   background-color: #016839;
 }
 
+.bg-green-600 {
+  background-color: #00512B;
+}
+
 .bg-green-300 {
   background-color: #7AC710;
 }
@@ -23,6 +27,22 @@
 
 .bg-green-50 {
   background-color: #E9F1EF;
+}
+
+.bg-green-150 {
+  background-color: #D3FF6E;
+}
+
+.bg-light-gray {
+  background-color: #C3C3C3;
+}
+
+.bg-light-gray-100 {
+  background-color: #ECECEC;
+}
+
+.text-light-gray {
+  color: #C3C3C3;
 }
 
 .bg-deals-slider-green {
@@ -155,6 +175,10 @@
 
 .w-80 {
   width: 80%;
+}
+
+.w-90 {
+  width: 90%;
 }
 
 .h-51 {
@@ -313,6 +337,10 @@
   bottom: 1.5rem;
 }
 
+.end-1-5 {
+  right: 1.5rem;
+}
+
 .mt-13 {
   margin-top: 13rem;
 }
@@ -331,6 +359,10 @@
 
 .mtn-6 {
   margin-top: -6rem;
+}
+
+.p-7 {
+  padding: 6rem;
 }
 
 .border-light-500 {
@@ -357,12 +389,49 @@
   transform: rotate(48deg);
 }
 
+.z-1 {
+  z-index: 1;
+}
+
 .zn-1 {
   z-index: -1;
 }
 
 .zn-2 {
   z-index: -2;
+}
+
+.toolkit-arrow {
+  width: 12px;
+  height: 12px;
+  background-color: #016839;
+  position: absolute;
+  rotate: 45deg;
+  right: -3px;
+  top: 10px;
+  z-index: -1;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through !important;
+  text-decoration-color: red !important;
+}
+
+.fresh-product-card::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #84D812;
+  transform: rotate(0);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: transform 0.3s ease;
+  border-radius: 1rem;
+}
+.fresh-product-card:hover::after {
+  transform: rotate(5deg);
 }
 
 .navbar,
@@ -454,6 +523,16 @@
   transform: translateY(-10px);
 }
 
+.subscribe .form-control::-moz-placeholder {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.subscribe .form-control::placeholder {
+  color: #ffffff;
+  font-size: 13px;
+}
+
 .shake-item-cont:hover .shake-item {
   animation: shake-animation 0.8s ease infinite;
 }
@@ -539,6 +618,24 @@
 .bg-green-500-hover:hover {
   background-color: #016839 !important;
   color: #ffffff;
+}
+
+.bg-green-500-hover {
+  transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+  cursor: pointer;
+}
+.bg-green-500-hover:hover {
+  background-color: #016839 !important;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.text-light-gray-hover {
+  transition: color 0.3s ease-out;
+  cursor: pointer;
+}
+.text-light-gray-hover:hover {
+  color: #000000 !important;
 }
 
 .scale-effect-hover-cont {
@@ -641,6 +738,48 @@
     opacity: 0%;
   }
 }
+.toolkit-card {
+  visibility: hidden !important;
+  transform: translateX(-10px);
+  transition: all 0.3s ease-in;
+}
+
+.toolkit-cont:hover .toolkit-card {
+  visibility: visible !important;
+  transform: translateX(0);
+}
+
+.farm-product-card-1 .farm-product-img-2 {
+  opacity: 0;
+  visibility: visible;
+  position: absolute;
+  top: 4rem;
+  transition: opacity 0.8s ease;
+}
+.farm-product-card-1:hover .farm-product-img-1 {
+  visibility: hidden;
+  opacity: 0;
+}
+.farm-product-card-1:hover .farm-product-img-2 {
+  opacity: 1;
+}
+.farm-product-card-1 .toolkit-cont-1, .farm-product-card-1 .toolkit-cont-2 {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.farm-product-card-1 .toolkit-cont-1 {
+  transition: all 0.5s 0.05s ease;
+}
+.farm-product-card-1 .toolkit-cont-2 {
+  transition: all 0.5s 0.03s ease;
+}
+.farm-product-card-1:hover .toolkit-cont-1, .farm-product-card-1:hover .toolkit-cont-2 {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 * {
   padding: 0;
   margin: 0;

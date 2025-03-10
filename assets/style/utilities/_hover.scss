@@ -25,13 +25,28 @@
     }
 }
 
-// headerdaki slaytın hoverı
+
 .bg-green-500-hover {
     transition: background-color .2s ease-out;
-
     &:hover {
         background-color: $green-500 !important;
         color: $white;
+    }
+}
+.bg-green-500-hover {
+    transition: background-color .3s ease-out, transform .3s ease-out;
+    cursor: pointer;
+    &:hover {
+        background-color: $green-500 !important;
+        color: $white;
+        transform: scale(1.05);
+    }
+}
+.text-light-gray-hover {
+    transition: color .3s ease-out;
+cursor: pointer;
+    &:hover {
+    color: $black !important;
     }
 }
 
@@ -149,4 +164,52 @@ padding:0 .1px;
     100%{
         opacity: 0%;
     }
+}
+.toolkit-card{
+    visibility: hidden !important;
+    transform: translateX(-10px);
+       transition: all .3s ease-in;
+   }
+.toolkit-cont:hover .toolkit-card{ 
+            visibility: visible !important;
+            transform: translateX(0);
+       
+}
+.farm-product-card-1{
+    .farm-product-img-2{
+opacity: 0;
+visibility: visible;
+       position: absolute;
+       top: 4rem;
+       transition: opacity .8s ease;
+    }
+&:hover 
+{
+    .farm-product-img-1{
+        visibility: hidden;
+opacity: 0;
+        }
+        .farm-product-img-2{
+            opacity: 1;
+        }
+}
+.toolkit-cont-1,.toolkit-cont-2{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+  
+}
+.toolkit-cont-1{
+    transition: all .5s .05s ease;
+}
+.toolkit-cont-2{
+    transition: all .5s .03s ease;
+}
+&:hover{
+    .toolkit-cont-1,.toolkit-cont-2{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 }
