@@ -37,6 +37,10 @@
   background-color: #C3C3C3;
 }
 
+.bg-blue-200 {
+  background-color: #E0F2F2;
+}
+
 .bg-light-gray-100 {
   background-color: #ECECEC;
 }
@@ -349,12 +353,20 @@
   margin-top: 6rem;
 }
 
+.my-6 {
+  margin: 6rem 0;
+}
+
 .mb-6 {
   margin-bottom: 6rem;
 }
 
 .mx-6 {
-  margin: 0 6rem;
+  margin: 0 5.5rem;
+}
+
+.px-6 {
+  padding: 0 6rem;
 }
 
 .mtn-6 {
@@ -363,6 +375,10 @@
 
 .p-7 {
   padding: 6rem;
+}
+
+.pb-6 {
+  padding-bottom: 8rem;
 }
 
 .border-light-500 {
@@ -399,6 +415,10 @@
 
 .zn-2 {
   z-index: -2;
+}
+
+.farm-product-catagory img:not(.active) {
+  visibility: hidden;
 }
 
 .toolkit-arrow {

@@ -10,6 +10,7 @@ $custom: (
     bg-green-50:(background-color, $green-50),
     bg-green-150:(background-color, $green-150),
     bg-light-gray:(background-color, $light-gray),
+    bg-blue-200:(background-color, $blue-200),
     bg-light-gray-100:(background-color, $light-gray-100),
     text-light-gray:(color, $light-gray),
     bg-deals-slider-green:(background-color, $deals-slider-green),
@@ -95,11 +96,14 @@ h-10:(height, 10rem),
     end-1-5:(right, 1.5rem),
     mt-13:(margin-top, 13rem),
     mt-6:(margin-top, 6rem),
+    my-6:(margin, 6rem 0),
 
     mb-6:(margin-bottom, 6rem),
-    mx-6:(margin,0 6rem),
+    mx-6:(margin,0 5.5rem),
+    px-6:(padding,0 6rem),
     mtn-6:(margin-top, -6rem),
 p-7:(padding,6rem),
+pb-6:(padding-bottom,8rem),
 
     // border
     border-light-500:(border, 1.5px solid $green-700),
@@ -133,6 +137,9 @@ p-7:(padding,6rem),
     .#{$name} {
         #{$property}: $property-value;
     }
+}
+.farm-product-catagory img:not(.active){
+visibility: hidden;
 }
 .toolkit-arrow{
     width: 12px;
