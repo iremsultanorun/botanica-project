@@ -333,6 +333,10 @@
   left: -4.6rem;
 }
 
+.top-1 {
+  top: 1rem;
+}
+
 .bottomn-8 {
   bottom: -8rem;
 }
@@ -452,6 +456,27 @@
 }
 .fresh-product-card:hover::after {
   transform: rotate(5deg);
+}
+
+.video-cont {
+  width: 100%;
+  height: 100dvh;
+  background-size: 100% 100%;
+  background-color: white;
+}
+.video-cont .video-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.video-cont .video-wrapper video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  opacity: 1;
+  background-attachment: fixed;
 }
 
 .navbar,
@@ -776,6 +801,10 @@
   top: 4rem;
   transition: opacity 0.8s ease;
 }
+.farm-product-card-1 .trending-img-2 {
+  top: -6rem !important;
+  left: 0rem !important;
+}
 .farm-product-card-1:hover .farm-product-img-1 {
   visibility: hidden;
   opacity: 0;
@@ -783,7 +812,7 @@
 .farm-product-card-1:hover .farm-product-img-2 {
   opacity: 1;
 }
-.farm-product-card-1 .toolkit-cont-1, .farm-product-card-1 .toolkit-cont-2 {
+.farm-product-card-1 .toolkit-cont-1, .farm-product-card-1 .toolkit-cont-2, .farm-product-card-1 .toolkit-cont-3 {
   visibility: hidden;
   opacity: 0;
   transform: translateY(-10px);
@@ -794,7 +823,10 @@
 .farm-product-card-1 .toolkit-cont-2 {
   transition: all 0.5s 0.03s ease;
 }
-.farm-product-card-1:hover .toolkit-cont-1, .farm-product-card-1:hover .toolkit-cont-2 {
+.farm-product-card-1 .toolkit-cont-3 {
+  transition: all 0.5s 0.01s ease;
+}
+.farm-product-card-1:hover .toolkit-cont-1, .farm-product-card-1:hover .toolkit-cont-2, .farm-product-card-1:hover .toolkit-cont-3 {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
@@ -809,10 +841,6 @@
 body, html {
   overflow-x: hidden;
   font-family: "Inter", sans-serif;
-}
-
-body {
-  height: 100dvh;
 }
 
 p {
