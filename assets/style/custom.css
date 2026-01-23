@@ -245,6 +245,11 @@
   width: 64rem;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .bold-700 {
   font-weight: 700;
 }
@@ -341,6 +346,22 @@
   left: 5rem;
 }
 
+.start-10 {
+  left: 10rem;
+}
+
+.start-30 {
+  left: 30rem;
+}
+
+.start-40 {
+  left: 35rem;
+}
+
+.start-45 {
+  left: 41rem;
+}
+
 .startn-5 {
   left: -4.6rem;
 }
@@ -433,12 +454,28 @@
   z-index: 1;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .zn-1 {
   z-index: -1;
 }
 
 .zn-2 {
   z-index: -2;
+}
+
+@media screen and (max-width: 767px) {
+  .footer.pt-6 {
+    padding-top: 15rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe.p-7 {
+    padding: 7rem 1rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -566,32 +603,6 @@
      object-position: center center;
   opacity: 1;
   background-attachment: fixed;
-}
-
-.navbar,
-.navbarr {
-  height: 110px;
-}
-
-.navbar-item {
-  height: 110px;
-  width: auto;
-}
-.navbar-item.active .nav-text {
-  color: #84D812;
-}
-.navbar-item:hover .dropdown-menuu {
-  visibility: visible;
-  top: 110px;
-}
-.navbar-item .dropdown-menuu {
-  width: 100%;
-  height: 400px !important;
-  position: absolute;
-  left: 0;
-  top: 120px;
-  visibility: hidden;
-  transition: top 0.3s ease-out;
 }
 
 .deals-slider-wrapper {
@@ -947,23 +958,26 @@
 
 .farm-product-card-1 .farm-product-img-2 {
   opacity: 0;
-  visibility: visible;
   position: absolute;
-  top: 4rem;
+  transition: opacity 0.8s ease;
+}
+.farm-product-card-1 .farm-product-img-1 {
   transition: opacity 0.8s ease;
 }
 .farm-product-card-1 .trending-img-2 {
-  top: -6rem !important;
+  top: 6rem !important;
   left: 0rem !important;
 }
 .farm-product-card-1:hover .farm-product-img-1 {
-  visibility: hidden;
   opacity: 0;
+  transition: opacity 0.8s ease;
 }
 .farm-product-card-1:hover .farm-product-img-2 {
   opacity: 1;
 }
-.farm-product-card-1 .toolkit-cont-1, .farm-product-card-1 .toolkit-cont-2, .farm-product-card-1 .toolkit-cont-3 {
+.farm-product-card-1 .toolkit-cont-1,
+.farm-product-card-1 .toolkit-cont-2,
+.farm-product-card-1 .toolkit-cont-3 {
   visibility: hidden;
   opacity: 0;
   transform: translateY(-10px);
@@ -977,7 +991,9 @@
 .farm-product-card-1 .toolkit-cont-3 {
   transition: all 0.5s 0.01s ease;
 }
-.farm-product-card-1:hover .toolkit-cont-1, .farm-product-card-1:hover .toolkit-cont-2, .farm-product-card-1:hover .toolkit-cont-3 {
+.farm-product-card-1:hover .toolkit-cont-1,
+.farm-product-card-1:hover .toolkit-cont-2,
+.farm-product-card-1:hover .toolkit-cont-3 {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
@@ -1000,7 +1016,7 @@ p {
 
 .text {
   color: #434343;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5rem;
 }
 
@@ -1012,12 +1028,91 @@ p {
   color: #84D812 !important;
 }
 
-.sm-text {
-  font-size: 12px;
+.md-bold-text {
   color: #434343;
+  font-size: 13px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+.md-bold-text:hover {
+  color: #016839;
 }
 
 .sm-bold-title {
   font-size: 16px;
   color: #000000;
+}
+
+.navbar {
+  height: 110px;
+  background-color: #00241B;
+}
+.navbar-logo {
+  width: 10rem;
+  height: auto;
+  display: block;
+}
+.navbar-item {
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  position: relative;
+  height: 100%;
+  width: auto;
+}
+.navbar-item .navbar-link {
+  color: #ffffff;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.navbar-item .active-link.navbar-link {
+  color: #84D812;
+}
+.navbar-item .custom-dropdown-menu {
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 10;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: start;
+  gap: 0.75rem;
+  padding: 1rem;
+  top: 100%;
+}
+.navbar-item .custom-dropdown-menu.small-menu {
+  visibility: hidden;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  transition: all 0.3s ease-out;
+  margin-top: 1rem;
+}
+.navbar-item .custom-dropdown-menu.mega-menu {
+  visibility: hidden;
+  left: 0;
+  transform: translateX(0) translateY(30px);
+  transition: all 0.3s ease-out;
+  margin: 0;
+}
+.navbar-item:hover .small-menu {
+  visibility: visible;
+  transform: translateX(-50%) translateY(30px);
+}
+.navbar-item:hover .mega-menu {
+  visibility: visible;
+  transform: translateX(0) translateY(0);
+}
+.navbar-item .custom-dropdown-menu > * {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.7s ease-out, opacity 0.9s ease-out;
+}
+.navbar-item:hover .custom-dropdown-menu > * {
+  transform: translateY(0px);
+  opacity: 1;
 }/*# sourceMappingURL=custom.css.map */
