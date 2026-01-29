@@ -16,7 +16,7 @@
     font-size: 13px;
 }
 .md-bold-text{
-@include text(13px);
+@include text(.9rem);
 font-weight:400;
 transition: color .3s ease;
 &:hover{
@@ -24,6 +24,6 @@ transition: color .3s ease;
 }
 }
 .sm-bold-title {
-    font-size: 16px;
+    font-size: 1rem;
     color: $black;
 }
