@@ -15,7 +15,28 @@
         <!-- navbar -->
         <div>
             <!-- navbar top -->
-            <nav class="navbar navbar-expand px-xl-5 px-1 py-0">
+             <nav class="navbar-tablet navbar navbar-expand d-flex justify-content-between">
+                <div class="d-flex gap-3">
+                    <i class="fa-solid fa-bars fs-5 text-dark"></i>
+                    <i class="fa-solid fa-magnifying-glass fs-5 text-dark"></i>
+                </div>
+                <a href="https://botanica.risingbamboo.com/" class="navbar-brand">
+                    <img src="./assets/images/logo/botanica-logo.png" class="navbar-logo" alt="logo">
+                </a>
+
+                <div class="d-flex gap-3">
+                    <div
+                    class="position-relative">
+                 <i class="fa-solid fa-basket-shopping fs-5 text-dark"></i>
+                 <span
+                 class="badge-count">0</span>
+                </div>
+                    <i class="fa-solid fa-border-all fs-4 text-dark"></i>
+            </div>
+        </div>
+             </nav>
+            <nav class="navbar-desktop navbar navbar-expand  justify-content-between">
+                <i class="fa-solid fa-bars fs-5 text-white pe-3 d-inline d-xl-none"></i>
                 <div class="container-fluid  d-flex align-items-center justify-content-between ">
                     <!-- navbar logo -->
                     <a href="https://botanica.risingbamboo.com/" class="navbar-brand">
@@ -23,7 +44,7 @@
                     </a>
                     <!-- navbar links -->
                     <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav d-xl-flex d-none align-items-center gap-4">
+                        <ul class="main-navigation navbar-nav">
                             <li class="navbar-item">
                                 <a href="#" class="navbar-link active-link">home
                                     <i class="fa-solid fa-angle-down fs-9"></i>
@@ -312,12 +333,11 @@
                                 <a href="#" class="navbar-link">blog
                                     <i class="fa-solid fa-angle-down fs-9"></i>
                                 </a>
-                                <!-- dropdown menu -->
+
                                 <ul
                                     class="list-group list-group-flush custom-dropdown-menu  small-menu flex-column p-0 gap-0">
-                                    <!-- dropdown menu content -->
-                                    <li
-                                        class="list-group-item dropdown-sub-trigger ">
+
+                                    <li class="list-group-item dropdown-sub-trigger ">
                                         <a href="#" class="sm-bold-title text-decoration-none text-capitalize">
                                             blog layout</a>
                                         <i class="fa-solid fa-chevron-right text"></i>
@@ -336,9 +356,8 @@
 
                                         </ul>
                                     </li>
-                                    <!-- dropdown menu content -->
-                                    <li
-                                        class="list-group-item dropdown-sub-trigger ">
+
+                                    <li class="list-group-item dropdown-sub-trigger ">
                                         <a href="#" class="sm-bold-title text-decoration-none text-capitalize">
                                             post layout</a>
                                         <i class="fa-solid fa-chevron-right text"></i>
@@ -346,22 +365,25 @@
                                         <ul class="dropdown-submenu">
                                             <li class=" list-unstyled text-nowrap "><a
                                                     class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">Sidebar</a></li>
+                                                    href="#">Sidebar</a>
+                                            </li>
                                             <li class=" list-unstyled text-nowrap "><a
                                                     class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">one column</a></li>
+                                                    href="#">one column</a>
+                                            </li>
                                             <li class=" list-unstyled text-nowrap "><a
                                                     class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">prallax image</a></li>
+                                                    href="#">prallax image</a>
+                                            </li>
                                             <li class=" list-unstyled text-nowrap "><a
                                                     class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">simple title</a></li>
+                                                    href="#">simple title</a>
+                                            </li>
 
                                         </ul>
                                     </li>
-                                    <!-- dropdown menu content -->
-                                    <li
-                                        class=" list-group-item dropdown-sub-trigger ">
+
+                                    <li class=" list-group-item dropdown-sub-trigger ">
                                         <a href="#" class="sm-bold-title text-decoration-none text-capitalize">
                                             blog style</a>
                                         <i class="fa-solid fa-chevron-right text"></i>
@@ -369,14 +391,16 @@
                                         <ul class="dropdown-submenu">
                                             <li class=" list-unstyled text-nowrap "><a
                                                     class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">blog list</a></li>
+                                                    href="#">blog list</a>
+                                            </li>
                                             <li class=" list-unstyled text-nowrap "><a
                                                     class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">blog grid</a></li>
+                                                    href="#">blog grid</a>
+                                            </li>
                                         </ul>
-                                        <!-- dropdown menu content -->
-                                    <li
-                                        class=" list-group-item dropdown-sub-trigger   ">
+                                    </li>
+
+                                    <li class=" list-group-item dropdown-sub-trigger   ">
                                         <a href="#" class="sm-bold-title text-decoration-none text-capitalize">
                                             blog format</a>
                                         <i class="fa-solid fa-chevron-right text"></i>
@@ -403,22 +427,22 @@
                         </li>
                         </ul>
                     </div>
-                    <div class="d-flex h-100 align-items-center gap-xl-6 gap-4">
+                    <div class="navbar-actions ">
                         <!-- search container -->
-                        <div class="search-cont input-group h-100  ">
+                        <div class="search-container input-group h-100 ">
                             <div class=" d-flex align-items-center justify-content-between">
                                 <button
-                                    class="d-xl-flex d-none btn bg-light rounded-start-pill fs-11 text-uppercase w-50  d-flex justify-content-between align-items-center gap-5 h-51 ps-3  ">catagory
+                                    class="d-xl-flex d-none btn bg-light rounded-start-pill fs-7 text-uppercase w-xl-50  d-flex justify-content-between align-items-center gap-5 h-100 ps-3  ">category
                                     <i class="fa-solid fa-angle-down fs-6 text-black-50"></i></button>
-                                <div class="position-relative h-51 search-cont  ">
+                                <div class="position-relative h-51 search-container  ">
                                     <input id="form-control" type="text"
-                                        class="form-control search-input  bg-light  h-100 w-20 fs-13 outline-0 border-0 ">
-                                    <label class="floating-label position-absolute fs-13 cursor-text opacity-20"
+                                        class="form-control search-input  bg-light  h-100 w-100 fs-13 outline-0 border-0 ">
+                                    <label class="floating-label position-absolute fs-7 cursor-text opacity-20"
                                         for="form-control">Enter your
                                         keyword</label>
                                     <span
-                                        class="bg-green-200-hover w-46 h-46 rounded-circle bg-green-500 position-absolute end-0 top-15 d-flex align-items-center justify-content-center me-1"><i
-                                            class="fa-solid fa-magnifying-glass text-light fs-7"></i></span>
+                                        class="search-btn "><i
+                                            class="fa-solid fa-magnifying-glass text-light fs-6"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -426,27 +450,29 @@
                         <div class="d-flex gap-2">
                             <!-- login signup -->
                             <div
-                                class="bg-green-200-hover w-49 h-49 rounded-circle d-flex align-items-center justify-content-center text-light border-light-500">
+                                class="bg-green-200-hover w-55 h-55  rounded-circle d-flex align-items-center justify-content-center text-light border-light-500">
                                 <i class="fa-regular fa-user fs-5"></i>
                             </div>
                             <div
-                                class="bg-green-200-hover w-49 h-49 rounded-circle d-flex align-items-center justify-content-center text-light border-light-500 position-relative">
+                                class="bg-green-200-hover w-55 h-55  rounded-circle d-flex align-items-center justify-content-center text-light border-light-500 position-relative">
                                 <i class="fa-solid fa-heart fs-5"></i>
                                 <span
-                                    class="w-18 h-18 rounded-circle position-absolute fs-12 bg-green-500 d-flex align-items-center justify-content-center topn-4 endn-3">0</span>
+                                    class="badge-count">0</span>
                             </div>
                             <div
-                                class="bg-green-200-hover w-49 h-49 rounded-circle d-flex align-items-center justify-content-center text-light border-light-500 position-relative">
-                                <i class="fa-solid fa-cart-shopping "></i>
+                                class="bg-green-200-hover w-55 h-55  rounded-circle d-flex align-items-center justify-content-center text-light border-light-500 position-relative">
+                             <i class="fa-solid fa-basket-shopping"></i>
                                 <span
-                                    class="w-18 h-18 rounded-circle position-absolute fs-12 bg-green-500 d-flex align-items-center justify-content-center topn-4 endn-3">0</span>
+                                    class="badge-count">0</span>
                             </div>
                         </div>
                     </div>
                 </div>
+                <i class="fa-solid fa-bars-staggered fs-5 text-white ps-3 d-inline d-xl-none"></i>
             </nav>
+
             <!-- navbar bottom -->
-            <div class="w-100 bg-green-100 h-49 px-5 d-flex align-items-center justify-content-between overflow-scroll">
+            <div class="navbar-bottom w-100 bg-green-100 h-49 px-5 d-flex align-items-center justify-content-between overflow-scroll">
                 <!-- contact -->
                 <div class="d-flex align-items-center gap-5">
                     <div class="d-flex align-items-center gap-2 shake-item-cont">

@@ -3,9 +3,10 @@
         animation: shake-animation .8s ease infinite;
     }
 }
-.shake-item-cont-2{
+
+.shake-item-cont-2 {
     &:hover .shake-item-2 {
-        animation: shake-animation-2 .8s ease ;
+        animation: shake-animation-2 .8s ease;
     }
 }
 
@@ -31,6 +32,7 @@
     }
 
 }
+
 @keyframes shake-animation-2 {
     0% {
         transform: rotate(0);
@@ -54,21 +56,3 @@
 
 }
 
-.search-cont {
-    .floating-label {
-        top: 18px;
-        left: 11px;
-        transition: all .3s ease;
-    }
-
-    .form-control:focus+.floating-label {
-        top: 2px;
-        font-size: 10px;
-        margin-bottom: 20px;
-    }
-
-    .form-control:focus {
-        outline: none !important;
-        border: none !important;
-    }
-}
