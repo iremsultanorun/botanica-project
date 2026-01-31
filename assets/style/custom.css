@@ -1001,6 +1001,17 @@ p {
   color: #000000;
 }
 
+.navbar-bottom-tablet {
+  display: none !important;
+}
+.navbar-bottom-tablet .navbar-bottom-button {
+  background-color: #ffffff !important;
+  border: none;
+}
+.navbar-bottom-tablet .navbar-bottom-button.active > i {
+  color: #84D812;
+}
+
 .navbar {
   height: 125px;
   background-color: #00241B;
@@ -1035,7 +1046,7 @@ p {
   color: #ffffff;
   text-transform: capitalize;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -1233,7 +1244,7 @@ p {
     background-color: #ffffff;
   }
   .navbar-logo {
-    width: 6.5rem;
+    width: 7rem;
   }
   .navbar-tablet {
     display: flex !important;
@@ -1247,5 +1258,14 @@ p {
   .navbar .badge-count {
     top: -8px;
     right: -8px;
+  }
+  .navbar .navbar-bottom-tablet {
+    display: inline-flex !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-bottom-tablet {
+    display: inline-flex !important;
   }
 }/*# sourceMappingURL=custom.css.map */
