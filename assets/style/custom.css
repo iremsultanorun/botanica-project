@@ -713,11 +713,11 @@
   font-size: 13px;
 }
 
-.shake-item-cont:hover .shake-item {
+.shake-item-container:hover .shake-item {
   animation: shake-animation 0.8s ease infinite;
 }
 
-.shake-item-cont-2:hover .shake-item-2 {
+.shake-item-container-2:hover .shake-item-2 {
   animation: shake-animation-2 0.8s ease;
 }
 
@@ -1267,5 +1267,24 @@ p {
 @media screen and (max-width: 767px) {
   .navbar-bottom-tablet {
     display: inline-flex !important;
+  }
+}
+.navbar-bottom {
+  height: 50px;
+  background-color: #CFFFBD;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+@media screen and (max-width: 1050px) {
+  .navbar-bottom {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navbar-bottom {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=custom.css.map */

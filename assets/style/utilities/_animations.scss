@@ -1,10 +1,10 @@
-.shake-item-cont {
+.shake-item-container {
     &:hover .shake-item {
         animation: shake-animation .8s ease infinite;
     }
 }
 
-.shake-item-cont-2 {
+.shake-item-container-2 {
     &:hover .shake-item-2 {
         animation: shake-animation-2 .8s ease;
     }
@@ -55,4 +55,3 @@
     }
 
 }
-
