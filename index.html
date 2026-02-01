@@ -10,527 +10,516 @@
 </head>
 
 <body>
-    <!-- header -->
+    <!--! header -->
     <header>
-        <!-- navbar -->
-        <div>
-            <!-- navbar top -->
-            <nav class="navbar-tablet navbar navbar-expand d-flex justify-content-between">
-                <div class="d-flex gap-3">
-                    <i class="fa-solid fa-bars fs-5 text-dark"></i>
-                    <i class="fa-solid fa-magnifying-glass fs-5 text-dark"></i>
+        <!--* navbar -->
+        <!-- navbar top -->
+        <nav class="navbar-tablet navbar navbar-expand d-flex justify-content-between">
+            <div class="d-flex gap-3">
+                <i class="fa-solid fa-bars fs-5 text-dark"></i>
+                <i class="fa-solid fa-magnifying-glass fs-5 text-dark"></i>
+            </div>
+            <a href="https://botanica.risingbamboo.com/" class="navbar-brand">
+                <img src="./assets/images/logo/botanica-logo.png" class="navbar-logo" alt="logo">
+            </a>
+
+            <div class="d-flex gap-3">
+                <div class="position-relative">
+                    <i class="fa-solid fa-basket-shopping fs-5 text-dark"></i>
+                    <span class="badge-count">0</span>
                 </div>
+                <i class="fa-solid fa-border-all fs-4 text-dark"></i>
+            </div>
+        </nav>
+        <nav class="navbar-bottom-tablet btn-group position-fixed bottom-0 left-0 w-100 z-3">
+
+            <button
+                class="navbar-bottom-button btn p-3 active d-flex flex-column align-items-center justify-content-center gap-1  border">
+                <i class="fa-solid fa-house fs-5"></i>
+                <p class="fs-7 text-dark text-capitalize">home</p>
+            </button>
+            <button
+                class="navbar-bottom-button btn p-3 d-flex flex-column align-items-center justify-content-center gap-1  border">
+                <i class="fa-solid fa-border-all fs-5"></i>
+                <p class="fs-7 text-dark text-capitalize">shopping</p>
+            </button>
+            <button
+                class="navbar-bottom-button btn p-3 d-flex flex-column align-items-center justify-content-center gap-1 border">
+                <i class="fa-solid fa-heart fs-5"></i>
+                <p class="fs-7 text-dark text-capitalize">wishlist</p>
+            </button>
+            <button
+                class="navbar-bottom-button btn p-3 d-flex flex-column align-items-center justify-content-center gap-1  border">
+                <i class="fa-regular fa-user fs-5"></i>
+                <p class="fs-7 text-dark text-capitalize">account</p>
+            </button>
+
+        </nav>
+        <nav class="navbar-desktop navbar navbar-expand justify-content-between">
+            <i class="fa-solid fa-bars fs-5 text-white pe-3 d-inline d-xl-none"></i>
+            <div class="container-fluid  d-flex align-items-center justify-content-between ">
+                <!-- navbar logo -->
                 <a href="https://botanica.risingbamboo.com/" class="navbar-brand">
                     <img src="./assets/images/logo/botanica-logo.png" class="navbar-logo" alt="logo">
                 </a>
-
-                <div class="d-flex gap-3">
-                    <div class="position-relative">
-                        <i class="fa-solid fa-basket-shopping fs-5 text-dark"></i>
-                        <span class="badge-count">0</span>
-                    </div>
-                    <i class="fa-solid fa-border-all fs-4 text-dark"></i>
-                </div>
-            </nav>
-            <nav class="navbar-bottom-tablet btn-group position-fixed bottom-0 left-0 w-100 z-3">
-
-                <button
-                    class="navbar-bottom-button btn p-3 active d-flex flex-column align-items-center justify-content-center gap-1  border">
-                    <i class="fa-solid fa-house fs-5"></i>
-                    <p class="fs-7 text-dark text-capitalize">home</p>
-                </button>
-                <button
-                    class="navbar-bottom-button btn p-3 d-flex flex-column align-items-center justify-content-center gap-1  border">
-                    <i class="fa-solid fa-border-all fs-5"></i>
-                    <p class="fs-7 text-dark text-capitalize">shopping</p>
-                </button>
-                <button
-                    class="navbar-bottom-button btn p-3 d-flex flex-column align-items-center justify-content-center gap-1 border">
-                    <i class="fa-solid fa-heart fs-5"></i>
-                    <p class="fs-7 text-dark text-capitalize">wishlist</p>
-                </button>
-                <button
-                    class="navbar-bottom-button btn p-3 d-flex flex-column align-items-center justify-content-center gap-1  border">
-                    <i class="fa-regular fa-user fs-5"></i>
-                    <p class="fs-7 text-dark text-capitalize">account</p>
-                </button>
-
-            </nav>
-            <nav class="navbar-desktop navbar navbar-expand justify-content-between">
-                <i class="fa-solid fa-bars fs-5 text-white pe-3 d-inline d-xl-none"></i>
-                <div class="container-fluid  d-flex align-items-center justify-content-between ">
-                    <!-- navbar logo -->
-                    <a href="https://botanica.risingbamboo.com/" class="navbar-brand">
-                        <img src="./assets/images/logo/botanica-logo.png" class="navbar-logo" alt="logo">
-                    </a>
-                    <!-- navbar links -->
-                    <div class="collapse navbar-collapse">
-                        <ul class="main-navigation navbar-nav">
-                            <li class="navbar-item">
-                                <a href="#" class="navbar-link active-link">home
-                                    <i class="fa-solid fa-angle-down fs-9"></i>
-                                </a>
-                                <!-- dropdown menu -->
-                                <ul class="custom-dropdown-menu small-menu flex-column">
-                                    <!-- dropdown menu content -->
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize ">homepage
-                                            vegetable 01</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
-                                            vegetable 02</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
-                                            food 01</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
-                                            food 02</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
-                                            food 03</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
-                                            food 04</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
-                                            drinks</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
-                                            honey</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
-                                            coffee 01</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
-                                            coffee 01</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
-                                            grocery 01</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
-                                            grocery 02</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-item position-static">
-                                <a href="#" class="navbar-link">shop
-                                    <i class="fa-solid fa-angle-down fs-9"></i>
-                                </a>
-                                <!-- dropdown menu -->
-                                <ul class="custom-dropdown-menu mega-menu row w-100">
-                                    <!-- dropdown menu content -->
-                                    <div class="col-md-8 d-flex justify-content-between align-items-start mt-5 h-50 ">
-                                        <ul class="d-flex flex-column gap-3">
-                                            <li class="text-capitalize list-unstyled">
-                                                <h2 class="sm-bold-title bold-700 mb-2">Products Category</h2>
-                                            </li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    Left Sidebar</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    right Sidebar</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    top Sidebar</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    Without Sidebar</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    full width</a></li>
-                                        </ul>
-                                        <ul class="d-flex flex-column gap-3">
-                                            <li class="text-capitalize list-unstyled">
-                                                <h2 class="sm-bold-title bold-700 mb-3">Products Category</h2>
-                                            </li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    Canvas On Left</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    Canvas On right</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    Canvas On top</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    Canvas On bottom</a></li>
-
-                                        </ul>
-                                        <ul class="d-flex flex-column gap-3">
-                                            <li class="text-capitalize list-unstyled">
-                                                <h2 class="sm-bold-title bold-700 mb-3">Products Category</h2>
-                                            </li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">numbeder
-                                                    pagination</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">load more
-                                                    button</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">infinity
-                                                    scroll load more</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                    <div class="col-md-4 d-flex justify-content-center">
-                                        <img src="./assets/images/menu-images/img-menu1.webp" alt="">
-                                    </div>
-
-                                </ul>
-                            </li>
-                            <li class="navbar-item position-static">
-                                <a href="#" class="navbar-link">product
-                                    <i class="fa-solid fa-angle-down fs-9"></i>
-                                </a>
-                                <!-- dropdown menu -->
-                                <ul class="custom-dropdown-menu mega-menu p-5 row w-100">
-                                    <!-- dropdown menu content -->
-                                    <div class="col-md-8 d-flex justify-content-between align-items-start mt-1 h-50 ">
-                                        <ul class="d-flex flex-column gap-3">
-                                            <li class="text-capitalize list-unstyled">
-                                                <h2 class="sm-bold-title bold-700 mb-2">Products Category</h2>
-                                            </li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    Left Sidebar</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    right Sidebar</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    top Sidebar</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    Without Sidebar</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    full width</a></li>
-                                        </ul>
-                                        <ul class="d-flex flex-column gap-3">
-                                            <li class="text-capitalize list-unstyled">
-                                                <h2 class="sm-bold-title bold-700 mb-3">Products Category</h2>
-                                            </li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    Canvas On Left</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    Canvas On right</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    Canvas On top</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">Category
-                                                    Canvas On bottom</a></li>
-
-                                        </ul>
-                                        <ul class="d-flex flex-column gap-3">
-                                            <li class="text-capitalize list-unstyled">
-                                                <h2 class="sm-bold-title bold-700 mb-3">Products Category</h2>
-                                            </li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">numbeder
-                                                    pagination</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">load more
-                                                    button</a></li>
-                                            <li class="list-unstyled"><a href="#"
-                                                    class="md-bold-text text-decoration-none text-capitalize">infinity
-                                                    scroll load more</a></li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4 d-flex align-items center justify-content-center">
-                                        <div class="d-flex w-75 flex-column">
+                <!-- navbar links -->
+                <div class="collapse navbar-collapse">
+                    <ul class="main-navigation navbar-nav">
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link active-link">home
+                                <i class="fa-solid fa-angle-down fs-9"></i>
+                            </a>
+                            <!-- dropdown menu -->
+                            <ul class="custom-dropdown-menu small-menu flex-column">
+                                <!-- dropdown menu content -->
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize ">homepage
+                                        vegetable 01</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
+                                        vegetable 02</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
+                                        food 01</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
+                                        food 02</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
+                                        food 03</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
+                                        food 04</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
+                                        drinks</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
+                                        honey</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
+                                        coffee 01</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
+                                        coffee 01</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
+                                        grocery 01</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">homepage
+                                        grocery 02</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar-item position-static">
+                            <a href="#" class="navbar-link">shop
+                                <i class="fa-solid fa-angle-down fs-9"></i>
+                            </a>
+                            <!-- dropdown menu -->
+                            <ul class="custom-dropdown-menu mega-menu row w-100">
+                                <!-- dropdown menu content -->
+                                <div class="col-md-8 d-flex justify-content-between align-items-start mt-5 h-50 ">
+                                    <ul class="d-flex flex-column gap-3">
+                                        <li class="text-capitalize list-unstyled">
+                                            <h2 class="sm-bold-title bold-700 mb-2">Products Category</h2>
+                                        </li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                Left Sidebar</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                right Sidebar</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                top Sidebar</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                Without Sidebar</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                full width</a></li>
+                                    </ul>
+                                    <ul class="d-flex flex-column gap-3">
+                                        <li class="text-capitalize list-unstyled">
                                             <h2 class="sm-bold-title bold-700 mb-3">Products Category</h2>
+                                        </li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                Canvas On Left</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                Canvas On right</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                Canvas On top</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                Canvas On bottom</a></li>
 
-                                            <div
-                                                class="card w-100 farm-product-card-1 shadow rounded-4 border-0 py-3 d-flex flex-row align-items-center">
+                                    </ul>
+                                    <ul class="d-flex flex-column gap-3">
+                                        <li class="text-capitalize list-unstyled">
+                                            <h2 class="sm-bold-title bold-700 mb-3">Products Category</h2>
+                                        </li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">numbeder
+                                                pagination</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">load more
+                                                button</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">infinity
+                                                scroll load more</a></li>
 
-                                                <a href="#"
-                                                    class="w-75 h-75 position-relative d-flex align-items-center justify-content-center">
-                                                    <img src="./assets/images/farm-fresh-product/broccoli/broccoli-img-1.webp"
-                                                        alt="" class="card-img-top w-100 h-100farm-product-img-1">
-                                                    <img src="./assets/images/farm-fresh-product/broccoli/broccoli-img-2.webp"
-                                                        alt=""
-                                                        class="card-img-top w-100 h-100 position-absolute top-0 start-0 farm-product-img-2">
-                                                </a>
-                                                <div class="card-body w-100 d-flex flex-column">
-                                                    <div class="d-flex align-items-center">
-                                                        <i class="fa-solid fa-star fs-13 text-black-50 opacity-50"></i>
-                                                        <i class="fa-solid fa-star fs-13 text-black-50 opacity-50"></i>
-                                                        <i class="fa-solid fa-star fs-13 text-black-50 opacity-50"></i>
-                                                        <i class="fa-solid fa-star fs-13 text-black-50 opacity-50"></i>
-                                                        <i class="fa-solid fa-star fs-13 text-black-50 opacity-50"></i>
-                                                        <span class="fs-9 ms-1">(0)</span>
-                                                    </div>
-                                                    <a href="#"
-                                                        class="card-title fs-15 fw-bold text-capitalize my-4 text-decoration-none text-green-500-hover">Green
-                                                        Broccoli</a>
-                                                    <span class="text-green-500 fw-bold fs-15">$8.00
-                                                        <span
-                                                            class="ms-3 text-decoration-line-through text-black-50 opacity-50">$9.00</span></span>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-4 d-flex justify-content-center">
+                                    <img src="./assets/images/menu-images/img-menu1.webp" alt="">
+                                </div>
+
+                            </ul>
+                        </li>
+                        <li class="navbar-item position-static">
+                            <a href="#" class="navbar-link">product
+                                <i class="fa-solid fa-angle-down fs-9"></i>
+                            </a>
+                            <!-- dropdown menu -->
+                            <ul class="custom-dropdown-menu mega-menu p-5 row w-100">
+                                <!-- dropdown menu content -->
+                                <div class="col-md-8 d-flex justify-content-between align-items-start mt-1 h-50 ">
+                                    <ul class="d-flex flex-column gap-3">
+                                        <li class="text-capitalize list-unstyled">
+                                            <h2 class="sm-bold-title bold-700 mb-2">Products Category</h2>
+                                        </li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                Left Sidebar</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                right Sidebar</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                top Sidebar</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                Without Sidebar</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                full width</a></li>
+                                    </ul>
+                                    <ul class="d-flex flex-column gap-3">
+                                        <li class="text-capitalize list-unstyled">
+                                            <h2 class="sm-bold-title bold-700 mb-3">Products Category</h2>
+                                        </li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                Canvas On Left</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                Canvas On right</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                Canvas On top</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">Category
+                                                Canvas On bottom</a></li>
+
+                                    </ul>
+                                    <ul class="d-flex flex-column gap-3">
+                                        <li class="text-capitalize list-unstyled">
+                                            <h2 class="sm-bold-title bold-700 mb-3">Products Category</h2>
+                                        </li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">numbeder
+                                                pagination</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">load more
+                                                button</a></li>
+                                        <li class="list-unstyled"><a href="#"
+                                                class="md-bold-text text-decoration-none text-capitalize">infinity
+                                                scroll load more</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 d-flex align-items center justify-content-center">
+                                    <div class="d-flex w-75 flex-column">
+                                        <h2 class="sm-bold-title bold-700 mb-3">Products Category</h2>
+
+                                        <div
+                                            class="card w-100 farm-product-card-1 shadow rounded-4 border-0 py-3 d-flex flex-row align-items-center">
+
+                                            <a href="#"
+                                                class="w-75 h-75 position-relative d-flex align-items-center justify-content-center">
+                                                <img src="./assets/images/farm-fresh-product/broccoli/broccoli-img-1.webp"
+                                                    alt="" class="card-img-top w-100 h-100farm-product-img-1">
+                                                <img src="./assets/images/farm-fresh-product/broccoli/broccoli-img-2.webp"
+                                                    alt=""
+                                                    class="card-img-top w-100 h-100 position-absolute top-0 start-0 farm-product-img-2">
+                                            </a>
+                                            <div class="card-body w-100 d-flex flex-column">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-solid fa-star fs-13 text-black-50 opacity-50"></i>
+                                                    <i class="fa-solid fa-star fs-13 text-black-50 opacity-50"></i>
+                                                    <i class="fa-solid fa-star fs-13 text-black-50 opacity-50"></i>
+                                                    <i class="fa-solid fa-star fs-13 text-black-50 opacity-50"></i>
+                                                    <i class="fa-solid fa-star fs-13 text-black-50 opacity-50"></i>
+                                                    <span class="fs-9 ms-1">(0)</span>
                                                 </div>
-                                            </div>
-                                            <div
-                                                class=" w-100 d-flex justify-content-center align-items-center gap-3 mt-5">
-                                                <span
-                                                    class="w-1-5 h-1-5 border-green-500 rounded-circle d-flex align-items-center justify-content-center">
-                                                    <span class="w-05 h-05 bg-green-500 rounded-circle"></span>
-                                                </span>
-                                                <span
-                                                    class="w-1-5 h-1-5 border border-light rounded-circle d-flex align-items-center justify-content-center">
-                                                    <span class="w-05 h-05 bg-green-200 rounded-circle"></span>
-                                                </span>
-                                                <span
-                                                    class="w-1-5 h-1-5 border border-light rounded-circle d-flex align-items-center justify-content-center">
-                                                    <span class="w-05 h-05 bg-green-200 rounded-circle"></span>
-                                                </span>
-
+                                                <a href="#"
+                                                    class="card-title fs-15 fw-bold text-capitalize my-4 text-decoration-none text-green-500-hover">Green
+                                                    Broccoli</a>
+                                                <span class="text-green-500 fw-bold fs-15">$8.00
+                                                    <span
+                                                        class="ms-3 text-decoration-line-through text-black-50 opacity-50">$9.00</span></span>
                                             </div>
                                         </div>
+                                        <div class=" w-100 d-flex justify-content-center align-items-center gap-3 mt-5">
+                                            <span
+                                                class="w-1-5 h-1-5 border-green-500 rounded-circle d-flex align-items-center justify-content-center">
+                                                <span class="w-05 h-05 bg-green-500 rounded-circle"></span>
+                                            </span>
+                                            <span
+                                                class="w-1-5 h-1-5 border border-light rounded-circle d-flex align-items-center justify-content-center">
+                                                <span class="w-05 h-05 bg-green-200 rounded-circle"></span>
+                                            </span>
+                                            <span
+                                                class="w-1-5 h-1-5 border border-light rounded-circle d-flex align-items-center justify-content-center">
+                                                <span class="w-05 h-05 bg-green-200 rounded-circle"></span>
+                                            </span>
+
+                                        </div>
                                     </div>
-
-
-                                </ul>
-                            </li>
-                            <li class="navbar-item">
-                                <a href="#" class="navbar-link">pages
-                                    <i class="fa-solid fa-angle-down fs-9"></i>
-                                </a>
-                                <!-- dropdown menu -->
-                                <ul class="custom-dropdown-menu small-menu flex-column">
-                                    <!-- dropdown menu content -->
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">
-                                            Contact us</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">
-                                            About us</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">
-                                            Store Locations</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">
-                                            Testimonial</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">
-                                            Wishlist</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">
-                                            My account</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">
-                                            Order Tracking</a>
-                                    </li>
-                                    <li class="list-unstyled text-nowrap">
-                                        <a href="#" class="md-bold-text text-decoration-none text-capitalize">
-                                            Checkout </a>
-                                    </li>
-
-                                </ul>
-                            </li>
-                            <li class="navbar-item">
-                                <a href="#" class="navbar-link">blog
-                                    <i class="fa-solid fa-angle-down fs-9"></i>
-                                </a>
-
-                                <ul
-                                    class="list-group list-group-flush custom-dropdown-menu  small-menu flex-column p-0 gap-0">
-
-                                    <li class="list-group-item dropdown-sub-trigger ">
-                                        <a href="#" class="sm-bold-title text-decoration-none text-capitalize">
-                                            blog layout</a>
-                                        <i class="fa-solid fa-chevron-right text"></i>
-
-                                        <ul class="dropdown-submenu">
-                                            <li class=" list-unstyled text-nowrap "><a
-                                                    class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">blog
-                                                    left sidebar</a></li>
-                                            <li class=" list-unstyled text-nowrap "><a
-                                                    class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">blog
-                                                    right sidebar</a></li>
-                                            <li class=" list-unstyled text-nowrap "><a
-                                                    class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">blog
-                                                    without sidebar</a></li>
-
-
-                                        </ul>
-                                    </li>
-
-                                    <li class="list-group-item dropdown-sub-trigger ">
-                                        <a href="#" class="sm-bold-title text-decoration-none text-capitalize">
-                                            post layout</a>
-                                        <i class="fa-solid fa-chevron-right text"></i>
-
-                                        <ul class="dropdown-submenu">
-                                            <li class=" list-unstyled text-nowrap "><a
-                                                    class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">Sidebar</a>
-                                            </li>
-                                            <li class=" list-unstyled text-nowrap "><a
-                                                    class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">one
-                                                    column</a>
-                                            </li>
-                                            <li class=" list-unstyled text-nowrap "><a
-                                                    class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">prallax image</a>
-                                            </li>
-                                            <li class=" list-unstyled text-nowrap "><a
-                                                    class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">simple title</a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-
-                                    <li class=" list-group-item dropdown-sub-trigger ">
-                                        <a href="#" class="sm-bold-title text-decoration-none text-capitalize">
-                                            blog style</a>
-                                        <i class="fa-solid fa-chevron-right text"></i>
-
-                                        <ul class="dropdown-submenu">
-                                            <li class=" list-unstyled text-nowrap "><a
-                                                    class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">blog
-                                                    list</a>
-                                            </li>
-                                            <li class=" list-unstyled text-nowrap "><a
-                                                    class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">blog
-                                                    grid</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class=" list-group-item dropdown-sub-trigger   ">
-                                        <a href="#" class="sm-bold-title text-decoration-none text-capitalize">
-                                            blog format</a>
-                                        <i class="fa-solid fa-chevron-right text"></i>
-
-                                        <ul class="dropdown-submenu">
-                                            <li class=" list-unstyled text-nowrap "><a
-                                                    class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">post
-                                                    format video</a></li>
-                                            <li class=" list-unstyled text-nowrap "><a
-                                                    class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">post
-                                                    format audio</a></li>
-                                            <li class=" list-unstyled text-nowrap "><a
-                                                    class="md-bold-text text-decoration-none text-capitalize"
-                                                    href="#">post
-                                                    format gallery</a></li>
-
-                                        </ul>
-                                    </li>
-
-                                </ul>
-
-                        </ul>
-
-                        </ul>
-                        </li>
-                        </ul>
-                    </div>
-                    <div class="navbar-actions ">
-                        <!-- search container -->
-                        <div class="search-container input-group h-100 ">
-                            <div class=" d-flex align-items-center justify-content-between">
-                                <button
-                                    class="d-xl-flex d-none btn bg-light rounded-start-pill fs-7 text-uppercase w-xl-50  d-flex justify-content-between align-items-center gap-5 h-100 ps-3  ">category
-                                    <i class="fa-solid fa-angle-down fs-6 text-black-50"></i></button>
-                                <div class="position-relative h-51 search-container  ">
-                                    <input id="form-control" type="text"
-                                        class="form-control search-input  bg-light  h-100 w-100 fs-13 outline-0 border-0 ">
-                                    <label class="floating-label position-absolute fs-7 cursor-text opacity-20"
-                                        for="form-control">Enter your
-                                        keyword</label>
-                                    <span class="search-btn "><i
-                                            class="fa-solid fa-magnifying-glass text-light fs-6"></i></span>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- navbar social media -->
-                        <div class="d-flex gap-2">
-                            <!-- login signup -->
-                            <div
-                                class="bg-green-200-hover w-55 h-55  rounded-circle d-flex align-items-center justify-content-center text-light border-light-500">
-                                <i class="fa-regular fa-user fs-5"></i>
-                            </div>
-                            <div
-                                class="bg-green-200-hover w-55 h-55  rounded-circle d-flex align-items-center justify-content-center text-light border-light-500 position-relative">
-                                <i class="fa-solid fa-heart fs-5"></i>
-                                <span class="badge-count">0</span>
-                            </div>
-                            <div
-                                class="bg-green-200-hover w-55 h-55  rounded-circle d-flex align-items-center justify-content-center text-light border-light-500 position-relative">
-                                <i class="fa-solid fa-basket-shopping"></i>
-                                <span class="badge-count">0</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <i class="fa-solid fa-bars-staggered fs-5 text-white ps-3 d-inline d-xl-none"></i>
-            </nav>
-            <!-- navbar bottom -->
-            <div class="navbar-bottom">
-                <!-- contact -->
-                <div class="d-flex align-items-center gap-5">
-                    <div class="d-flex align-items-center gap-2 shake-item-container">
-                        <i class="fa-solid fa-phone-volume fs-7 text-green-500 shake-item"></i>
-                        <a href="tel:+0123-456-789" class="text-decoration-none text-dark fs-7">+0123-456-789
-                        </a>
-                    </div>
-                    <div class="d-flex align-items-center gap-2 shake-item-container">
-                        <i class="fa-solid fa-envelope fs-7 text-green-500 shake-item"></i>
-                        <p class=" text-dark fs-7 d-flex align-items-center h-100">example@domain.com</p>
-                    </div>
-                </div>
-                <!-- adress -->
-                <div class="d-flex align-items-center gap-5">
 
-                    <div class="d-flex align-items-center gap-2 shake-item-container">
-                        <i class="fa-solid fa-location-dot fs-7 text-green-500 shake-item"></i>
-                        <p class=" text-dark fs-7">PO Box 1622 Bamboo Street West
-                        </p>
+
+                            </ul>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link">pages
+                                <i class="fa-solid fa-angle-down fs-9"></i>
+                            </a>
+                            <!-- dropdown menu -->
+                            <ul class="custom-dropdown-menu small-menu flex-column">
+                                <!-- dropdown menu content -->
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">
+                                        Contact us</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">
+                                        About us</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">
+                                        Store Locations</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">
+                                        Testimonial</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">
+                                        Wishlist</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">
+                                        My account</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">
+                                        Order Tracking</a>
+                                </li>
+                                <li class="list-unstyled text-nowrap">
+                                    <a href="#" class="md-bold-text text-decoration-none text-capitalize">
+                                        Checkout </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link">blog
+                                <i class="fa-solid fa-angle-down fs-9"></i>
+                            </a>
+
+                            <ul
+                                class="list-group list-group-flush custom-dropdown-menu  small-menu flex-column p-0 gap-0">
+
+                                <li class="list-group-item dropdown-sub-trigger ">
+                                    <a href="#" class="sm-bold-title text-decoration-none text-capitalize">
+                                        blog layout</a>
+                                    <i class="fa-solid fa-chevron-right text"></i>
+
+                                    <ul class="dropdown-submenu">
+                                        <li class=" list-unstyled text-nowrap "><a
+                                                class="md-bold-text text-decoration-none text-capitalize" href="#">blog
+                                                left sidebar</a></li>
+                                        <li class=" list-unstyled text-nowrap "><a
+                                                class="md-bold-text text-decoration-none text-capitalize" href="#">blog
+                                                right sidebar</a></li>
+                                        <li class=" list-unstyled text-nowrap "><a
+                                                class="md-bold-text text-decoration-none text-capitalize" href="#">blog
+                                                without sidebar</a></li>
+
+
+                                    </ul>
+                                </li>
+
+                                <li class="list-group-item dropdown-sub-trigger ">
+                                    <a href="#" class="sm-bold-title text-decoration-none text-capitalize">
+                                        post layout</a>
+                                    <i class="fa-solid fa-chevron-right text"></i>
+
+                                    <ul class="dropdown-submenu">
+                                        <li class=" list-unstyled text-nowrap "><a
+                                                class="md-bold-text text-decoration-none text-capitalize"
+                                                href="#">Sidebar</a>
+                                        </li>
+                                        <li class=" list-unstyled text-nowrap "><a
+                                                class="md-bold-text text-decoration-none text-capitalize" href="#">one
+                                                column</a>
+                                        </li>
+                                        <li class=" list-unstyled text-nowrap "><a
+                                                class="md-bold-text text-decoration-none text-capitalize"
+                                                href="#">prallax image</a>
+                                        </li>
+                                        <li class=" list-unstyled text-nowrap "><a
+                                                class="md-bold-text text-decoration-none text-capitalize"
+                                                href="#">simple title</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li class=" list-group-item dropdown-sub-trigger ">
+                                    <a href="#" class="sm-bold-title text-decoration-none text-capitalize">
+                                        blog style</a>
+                                    <i class="fa-solid fa-chevron-right text"></i>
+
+                                    <ul class="dropdown-submenu">
+                                        <li class=" list-unstyled text-nowrap "><a
+                                                class="md-bold-text text-decoration-none text-capitalize" href="#">blog
+                                                list</a>
+                                        </li>
+                                        <li class=" list-unstyled text-nowrap "><a
+                                                class="md-bold-text text-decoration-none text-capitalize" href="#">blog
+                                                grid</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class=" list-group-item dropdown-sub-trigger   ">
+                                    <a href="#" class="sm-bold-title text-decoration-none text-capitalize">
+                                        blog format</a>
+                                    <i class="fa-solid fa-chevron-right text"></i>
+
+                                    <ul class="dropdown-submenu">
+                                        <li class=" list-unstyled text-nowrap "><a
+                                                class="md-bold-text text-decoration-none text-capitalize" href="#">post
+                                                format video</a></li>
+                                        <li class=" list-unstyled text-nowrap "><a
+                                                class="md-bold-text text-decoration-none text-capitalize" href="#">post
+                                                format audio</a></li>
+                                        <li class=" list-unstyled text-nowrap "><a
+                                                class="md-bold-text text-decoration-none text-capitalize" href="#">post
+                                                format gallery</a></li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                    </ul>
+
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+                <div class="navbar-actions ">
+                    <!-- search container -->
+                    <div class="search-container input-group h-100 ">
+                        <div class=" d-flex align-items-center justify-content-between">
+                            <button
+                                class="d-xl-flex d-none btn bg-light rounded-start-pill fs-7 text-uppercase w-xl-50  d-flex justify-content-between align-items-center gap-5 h-100 ps-3  ">category
+                                <i class="fa-solid fa-angle-down fs-6 text-black-50"></i></button>
+                            <div class="position-relative h-51 search-container  ">
+                                <input id="form-control" type="text"
+                                    class="form-control search-input  bg-light  h-100 w-100 fs-13 outline-0 border-0 ">
+                                <label class="floating-label position-absolute fs-7 cursor-text opacity-20"
+                                    for="form-control">Enter your
+                                    keyword</label>
+                                <span class="search-btn "><i
+                                        class="fa-solid fa-magnifying-glass text-light fs-6"></i></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex align-items-center gap-2 shake-item-container">
-                        <i class="fa-solid fa-truck fs-7 text-green-500 shake-item"></i>
-                        <p class=" text-dark fs-7">Free shipping for order above $200.00
-                        </p>
+                    <!-- navbar social media -->
+                    <div class="d-flex gap-2">
+                        <!-- login signup -->
+                        <div
+                            class="bg-green-200-hover w-55 h-55  rounded-circle d-flex align-items-center justify-content-center text-light border-light-500">
+                            <i class="fa-regular fa-user fs-5"></i>
+                        </div>
+                        <div
+                            class="bg-green-200-hover w-55 h-55  rounded-circle d-flex align-items-center justify-content-center text-light border-light-500 position-relative">
+                            <i class="fa-solid fa-heart fs-5"></i>
+                            <span class="badge-count">0</span>
+                        </div>
+                        <div
+                            class="bg-green-200-hover w-55 h-55  rounded-circle d-flex align-items-center justify-content-center text-light border-light-500 position-relative">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span class="badge-count">0</span>
+                        </div>
                     </div>
                 </div>
             </div>
+            <i class="fa-solid fa-bars-staggered fs-5 text-white ps-3 d-inline d-xl-none"></i>
+        </nav>
+        <!-- navbar bottom -->
+        <div class="navbar-bottom">
+            <!-- contact -->
+            <div class="d-flex align-items-center gap-5">
+                <div class="d-flex align-items-center gap-2 shake-item-container">
+                    <i class="fa-solid fa-phone-volume fs-7 text-green-500 shake-item"></i>
+                    <a href="tel:+0123-456-789" class="text-decoration-none text-dark fs-7">+0123-456-789
+                    </a>
+                </div>
+                <div class="d-flex align-items-center gap-2 shake-item-container">
+                    <i class="fa-solid fa-envelope fs-7 text-green-500 shake-item"></i>
+                    <p class=" text-dark fs-7 d-flex align-items-center h-100">example@domain.com</p>
+                </div>
+            </div>
+            <!-- adress -->
+            <div class="d-flex align-items-center gap-5">
+
+                <div class="d-flex align-items-center gap-2 shake-item-container">
+                    <i class="fa-solid fa-location-dot fs-7 text-green-500 shake-item"></i>
+                    <p class=" text-dark fs-7">PO Box 1622 Bamboo Street West
+                    </p>
+                </div>
+                <div class="d-flex align-items-center gap-2 shake-item-container">
+                    <i class="fa-solid fa-truck fs-7 text-green-500 shake-item"></i>
+                    <p class=" text-dark fs-7">Free shipping for order above $200.00
+                    </p>
+                </div>
+            </div>
         </div>
-        <!-- hero section -->
-        <section class="d-flex align-items-center gap-2 m-2">
+
+        <!--* hero section -->
+        <section class="row d-flex align-items-center gap-2 m-3">
             <!-- top categories -->
-            <div class="w-33 rounded bg-green-50 overflow-hidden d-lg-block d-none">
+            <div class="top-categories">
                 <!-- top categories title -->
                 <div class="d-flex flex-column align-items-center gap-2 py-4 mb-3">
                     <h4 class="fs-5 text-green-500 fw-semibold text-capitalize">Top Categories</h4>
@@ -596,15 +585,16 @@
                     </li>
                 </ul>
                 <!-- top categories pattern -->
-                <div class="position-relative mt-13">
+                <div class="category-promo">
                     <img src="./assets/images/catagories/catagories-bottom-pattern.png"
-                        class="  position-absolute z-1 bottom-0" alt="">
-                    <img src="./assets/images/catagories/fruits.png" class="position-absolute w-70  bottomn-8 start-5"
+                        class="promo-pattern" alt="">
+
+                    <img class="promo-image" src="./assets/images/catagories/fruits.png"
                         alt="">
                 </div>
             </div>
             <!-- hero slide -->
-            <div class="w-lg-75 w-full rounded overflow-hidden position-relative">
+            <div class="rounded overflow-hidden position-relative">
                 <!-- hero slide image -->
                 <div class="rounded">
                     <img class="rounded object-fit-scale h-100"
