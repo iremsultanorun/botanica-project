@@ -15,6 +15,10 @@
         font-size: 13px;
         border-radius: 60px;
         gap: 20px;
+        @media screen and (max-width:1000px) {
+            padding: 4px 8px 4px 28px;
+            font-size: 11px;
+            }   
     }
 
     @if $with-icon-container==true {
@@ -27,6 +31,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            @media screen and (max-width:1000px) {
+                width: 40px;
+                height: 40px;
+                }   
         }
     }
 }

@@ -729,6 +729,12 @@
   border-radius: 60px;
   gap: 20px;
 }
+@media screen and (max-width: 1000px) {
+  .pill-btn_explore {
+    padding: 4px 8px 4px 28px;
+    font-size: 11px;
+  }
+}
 .pill-btn_explore .icon-container {
   width: 50px;
   height: 50px;
@@ -738,6 +744,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .pill-btn_explore .icon-container {
+    width: 40px;
+    height: 40px;
+  }
 }
 .pill-btn_explore:hover {
   color: #ffffff;
@@ -760,6 +772,12 @@
   border-radius: 60px;
   gap: 20px;
 }
+@media screen and (max-width: 1000px) {
+  .pill-btn_shop {
+    padding: 4px 8px 4px 28px;
+    font-size: 11px;
+  }
+}
 .pill-btn_shop .icon-container {
   width: 50px;
   height: 50px;
@@ -769,6 +787,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .pill-btn_shop .icon-container {
+    width: 40px;
+    height: 40px;
+  }
 }
 .pill-btn_shop:hover {
   color: #ffffff;
@@ -1359,6 +1383,7 @@ p {
   border-radius: 10px;
   background-color: #E9F1EF;
   overflow: hidden;
+  max-height: 100dvh;
 }
 .top-categories .category-promo {
   position: relative;
@@ -1385,6 +1410,11 @@ p {
   z-index: 1;
   -webkit-user-drag: none;
 }
+@media screen and (max-width: 1023px) {
+  .top-categories {
+    display: none;
+  }
+}
 
 .hero-slide {
   width: 70%;
@@ -1392,4 +1422,9 @@ p {
   border-radius: 10px;
   position: relative;
   display: flex;
+}
+@media screen and (max-width: 1023px) {
+  .hero-slide {
+    width: 100%;
+  }
 }/*# sourceMappingURL=custom.css.map */

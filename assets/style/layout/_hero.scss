@@ -3,6 +3,7 @@
     border-radius: $sm-radius;
     background-color: $green-50;
     overflow: hidden;
+    max-height: 100dvh;
     .category-promo {
         position: relative;
         width: 100%;
@@ -30,6 +31,9 @@
             -webkit-user-drag: none;
         }
     }
+    @media screen and (max-width:1023px) {
+        display: none ;
+    }
 }
 
 .hero-slide {
@@ -38,4 +42,7 @@
     border-radius: $sm-radius;
     position: relative;
     display: flex;
+    @media screen and (max-width:1023px) {
+    width: 100%;
+    }
 }
