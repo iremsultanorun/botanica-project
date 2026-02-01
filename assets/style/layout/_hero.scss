@@ -3,7 +3,6 @@
     border-radius: $sm-radius;
     background-color: $green-50;
     overflow: hidden;
-
     .category-promo {
         position: relative;
         width: 100%;
@@ -31,4 +30,12 @@
             -webkit-user-drag: none;
         }
     }
+}
+
+.hero-slide {
+    width: 70%;
+    height: 100%;
+    border-radius: $sm-radius;
+    position: relative;
+    display: flex;
 }

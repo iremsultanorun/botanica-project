@@ -713,6 +713,71 @@
   font-size: 13px;
 }
 
+.pill-btn_explore {
+  width: auto;
+  display: flex;
+  align-items: center;
+  color: #016839;
+  text-wrap: nowrap;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: all 0.2s ease-in;
+  padding: 6px 10px 6px 30px;
+  font-size: 13px;
+  border-radius: 60px;
+  gap: 20px;
+}
+.pill-btn_explore .icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #84D812;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pill-btn_explore:hover {
+  color: #ffffff;
+  background-color: #016839;
+}
+
+.pill-btn_shop {
+  width: auto;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-wrap: nowrap;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #016839;
+  transition: all 0.2s ease-in;
+  padding: 6px 10px 6px 30px;
+  font-size: 13px;
+  border-radius: 60px;
+  gap: 20px;
+}
+.pill-btn_shop .icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  color: #016839;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pill-btn_shop:hover {
+  color: #ffffff;
+  background-color: #00512B;
+}
+.pill-btn_shop:hover .icon-container {
+  background-color: #84D812;
+}
+
 .shake-item-container:hover .shake-item {
   animation: shake-animation 0.8s ease infinite;
 }
@@ -1319,4 +1384,12 @@ p {
   max-width: 250px;
   z-index: 1;
   -webkit-user-drag: none;
+}
+
+.hero-slide {
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
 }/*# sourceMappingURL=custom.css.map */
