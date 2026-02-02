@@ -28,6 +28,7 @@
         }
 
         .rotate-container {
+            cursor: pointer;
             .rotate-dots {
                 transform: rotate(0deg);
                 padding: 4px;

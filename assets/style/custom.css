@@ -1449,6 +1449,9 @@ p {
   top: 15.5rem;
   left: -4.6rem;
 }
+.top-offers_card-container .top-offers_card .rotate-container {
+  cursor: pointer;
+}
 .top-offers_card-container .top-offers_card .rotate-container .rotate-dots {
   transform: rotate(0deg);
   padding: 4px;
