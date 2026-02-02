@@ -1,0 +1,89 @@
+.top-offers_card-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 30px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+
+    .top-offers_card {
+        overflow: hidden;
+        position: relative;
+        border-radius: 10%;
+        @include scale-effect;
+
+        &-image {
+            border-radius: inherit;
+        }
+
+        .partial-circle {
+            transform: rotate(48deg);
+            background-color: $white;
+            border-radius: 30%;
+            width: 23rem;
+            height: 23rem;
+            position: absolute;
+            top: 15.5rem;
+            left: -4.6rem;
+        }
+
+        .rotate-container {
+            .rotate-dots {
+                transform: rotate(0deg);
+                padding: 4px;
+                position: absolute;
+                top: 12rem;
+                left: 5.5rem;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                border: 2px dashed $green-200;
+                transition: transform .3s ease-out, border .3s ease-out;
+            }
+
+            &:hover .rotate-dots {
+                border: 2px dashed $green-500;
+                transform: rotate(360deg);
+            }
+
+            .card-badge {
+                background-color: $green-200;
+                border-radius: 50%;
+                transition: background-color .2s ease-out;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 3rem;
+                height: 3rem;
+                position: absolute;
+                top: 12.5rem;
+                left: 6rem;
+
+                &:hover {
+                    background-color: $green-500;
+                }
+            }
+
+        }
+    }
+    @media screen and (max-width:1338px) {
+        grid-template-columns: repeat(4, auto);
+       .top-offers_card:nth-child(5){
+           display: none !important;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        grid-template-columns: repeat(3, auto);
+       .top-offers_card:nth-child(4){
+           display: none !important;
+        }
+    }
+    @media screen and (max-width:750px) {
+        grid-template-columns: repeat(2, auto);
+        gap: 20px;
+       .top-offers_card:nth-child(3){
+           display: none !important;
+        }
+    }
+    
+}

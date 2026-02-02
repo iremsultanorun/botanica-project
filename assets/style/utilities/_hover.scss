@@ -10,6 +10,7 @@
 .bg-green-200-hover {
     cursor: pointer;
     transition: background-color .2s ease-in;
+
     &:hover {
         background-color: $green-200;
     }
@@ -53,34 +54,20 @@
         color: $black !important;
     }
 }
-
-.scale-effect-hover-cont {
+@mixin scale-effect{
     overflow: hidden;
-
     .scale-item {
         transition: transform .3s ease-out;
     }
-
     &:hover .scale-item {
         transform: scale(1.1);
     }
 }
-
-.rotate-cont {
-    .rotate-dots {
-        transform: rotate(0deg);
-        width: 4rem;
-        height: 4rem;
-        border-radius: 50%;
-        border: 2px dashed $green-200;
-        transition: transform .3s ease-out, border .3s ease-out;
-    }
-
-    &:hover .rotate-dots {
-        border: 2px dashed $green-500;
-        transform: rotate(360deg);
-    }
+.scale-effect {
+@include scale-effect;
 }
+
+
 
 .bg-green-900-hover {
     transition: background-color .2s ease-in;
@@ -194,9 +181,11 @@
         position: absolute;
         transition: opacity .8s ease;
     }
+
     .farm-product-img-1 {
         transition: opacity .8s ease;
     }
+
     .trending-img-2 {
         top: 6rem !important;
         left: 0rem !important;
