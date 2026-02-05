@@ -31,3 +31,15 @@
     font-size: 1.1rem;
     color: $black;
 }
+.section-title{
+    font-size: 34px;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 700;
+}
+.section-subtitle{
+    font-size: 16px;
+    color: $green-500;
+    font-weight: 600;
+margin-bottom: 15px;
+}

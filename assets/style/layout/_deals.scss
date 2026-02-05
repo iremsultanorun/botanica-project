@@ -1,0 +1,85 @@
+.deals-pattern {
+    width: 55px;
+}
+
+.deals-slider-wrapper {
+    transform: translateX(-58%);
+    display: grid;
+    grid-template-columns: repeat(3, 70%);
+    gap: 20px;
+    position: relative;
+    margin-top: 40px;
+
+    &:hover .arrows-container {
+        visibility: visible;
+    }
+
+    .arrows-container {
+        width: 70%;
+        top: 44%;
+        left: 72%;
+        visibility: hidden;
+        transition: visibility .4s ease;
+    }
+
+    .deals-slider-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 50px;
+        border-radius: 50rem;
+        height: 30rem;
+
+        &:nth-child(2) {
+            background-color: $deals-slider-purple;
+        }
+
+        &:nth-child(3) {
+            background-color: $deals-slider-green;
+        }
+
+        &:nth-child(4) {
+            background-color: $deals-slider-pink;
+        }
+
+        @media screen and (max-width:767px) {
+            height: auto;
+            width: 100%;
+            flex-direction: column;
+            border-radius: $sm-radius;
+        }
+    }
+
+    @media screen and (max-width:990px) {
+        transform: translateX(-98%);
+        gap: 40px;
+        grid-template-columns: repeat(3, 95%);
+
+        .arrows-container {
+            width: 95%;
+            left: 101%;
+            visibility: visible;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        transform: translateX(-100%);
+    }
+
+    @media screen and (max-width:500px) {
+        transform: translateX(-101%);
+
+        .arrows-container {
+            width: 100%;
+            left: 104%;
+        }
+    }
+
+    @media screen and (max-width:400px) {
+        transform: translateX(-104%);
+    }
+
+    @media screen and (max-width:300px) {
+        transform: translateX(-106%);
+    }
+}
