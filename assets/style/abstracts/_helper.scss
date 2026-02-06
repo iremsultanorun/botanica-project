@@ -233,20 +233,7 @@ $custom: (
     opacity: 60%;
 }
 
-.farm-product-catagory img:not(.active) {
-    visibility: hidden;
-}
 
-.toolkit-arrow {
-    width: 12px;
-    height: 12px;
-    background-color: $green-500;
-    position: absolute;
-    rotate: 45deg;
-    right: -3px;
-    top: 10px;
-    z-index: -1;
-}
 
 .text-decoration-line-through {
     text-decoration: line-through !important;
@@ -254,27 +241,6 @@ $custom: (
 }
 
 
-.fresh-product-card {
-    &::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        background-color: $green-200;
-        transform: rotate(0);
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        transition: transform .3s ease;
-        border-radius: 1rem;
-    }
-
-    &:hover::after {
-
-        transform: rotate(5deg);
-    }
-
-}
 
 .video-cont {
     width: 100%;

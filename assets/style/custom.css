@@ -531,41 +531,9 @@
   opacity: 60%;
 }
 
-.farm-product-catagory img:not(.active) {
-  visibility: hidden;
-}
-
-.toolkit-arrow {
-  width: 12px;
-  height: 12px;
-  background-color: #016839;
-  position: absolute;
-  rotate: 45deg;
-  right: -3px;
-  top: 10px;
-  z-index: -1;
-}
-
 .text-decoration-line-through {
   text-decoration: line-through !important;
   text-decoration-color: red !important;
-}
-
-.fresh-product-card::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  background-color: #84D812;
-  transform: rotate(0);
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  transition: transform 0.3s ease;
-  border-radius: 1rem;
-}
-.fresh-product-card:hover::after {
-  transform: rotate(5deg);
 }
 
 .video-cont {
@@ -699,6 +667,51 @@
 }
 .slider-pagination .slider-pagination_dot.slider-pagination_dot-active > .slider-pagination_dot-circle {
   background-color: #016839;
+}
+
+.fresh-product-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+  border: none;
+  padding: 30px 0;
+  position: relative;
+  background-color: #ffffff;
+}
+.fresh-product-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #84D812;
+  transform: rotate(0);
+  width: 100%;
+  height: 100%;
+  z-index: -5 !important;
+  transition: transform 0.3s ease;
+  border-radius: 1rem;
+}
+.fresh-product-card:hover::after {
+  transform: rotate(5deg);
+  background-color: blue !important;
+}
+
+.discount, .sold-out {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+
+.discount {
+  background-color: #D3FF6E;
+  gap: 10px;
+}
+
+.sold-out {
+  background-color: #66AD53;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 10px;
 }
 
 .pill-btn_explore {
@@ -969,60 +982,6 @@
     opacity: 0%;
   }
 }
-.toolkit-card {
-  visibility: hidden !important;
-  transform: translateX(-10px);
-  transition: all 0.3s ease-in;
-}
-
-.toolkit-cont:hover .toolkit-card {
-  visibility: visible !important;
-  transform: translateX(0);
-}
-
-.farm-product-card-1 .farm-product-img-2 {
-  opacity: 0;
-  position: absolute;
-  transition: opacity 0.8s ease;
-}
-.farm-product-card-1 .farm-product-img-1 {
-  transition: opacity 0.8s ease;
-}
-.farm-product-card-1 .trending-img-2 {
-  top: 6rem !important;
-  left: 0rem !important;
-}
-.farm-product-card-1:hover .farm-product-img-1 {
-  opacity: 0;
-  transition: opacity 0.8s ease;
-}
-.farm-product-card-1:hover .farm-product-img-2 {
-  opacity: 1;
-}
-.farm-product-card-1 .toolkit-cont-1,
-.farm-product-card-1 .toolkit-cont-2,
-.farm-product-card-1 .toolkit-cont-3 {
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(-10px);
-}
-.farm-product-card-1 .toolkit-cont-1 {
-  transition: all 0.5s 0.05s ease;
-}
-.farm-product-card-1 .toolkit-cont-2 {
-  transition: all 0.5s 0.03s ease;
-}
-.farm-product-card-1 .toolkit-cont-3 {
-  transition: all 0.5s 0.01s ease;
-}
-.farm-product-card-1:hover .toolkit-cont-1,
-.farm-product-card-1:hover .toolkit-cont-2,
-.farm-product-card-1:hover .toolkit-cont-3 {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -1689,4 +1648,123 @@ p {
   100% {
     transform: rotate(360deg);
   }
+}
+.farm-products_pattern {
+  position: absolute;
+  left: 0;
+  top: 10rem;
+}
+.farm-products .farm-products_category-image {
+  width: 30px;
+}
+.farm-products .farm-products_category-image:not(.active) {
+  visibility: hidden;
+}
+.farm-products .fresh-product-card .farm-product-images {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  margin-top: 20px;
+}
+.farm-products .fresh-product-card .farm-product-images .farm-product-img {
+  width: 90%;
+}
+.farm-products .fresh-product-card .farm-product-images .farm-product-img:nth-child(2) {
+  transition: opacity 0.8s ease;
+  position: absolute;
+  opacity: 0;
+}
+.farm-products .fresh-product-card .farm-product-images .farm-product-img:nth-child(1) {
+  transition: opacity 0.8s ease;
+}
+.farm-products .fresh-product-card:hover .farm-product-img:nth-child(1) {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.farm-products .fresh-product-card:hover .farm-product-img:nth-child(2) {
+  opacity: 1;
+}
+.farm-products .fresh-product-card .trending-img-2 {
+  top: 6rem !important;
+  left: 0rem !important;
+}
+.farm-products .fresh-product-card .toolkit-wrapper {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+.farm-products .fresh-product-card .toolkit-wrapper .toolkit-cont {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+.farm-products .fresh-product-card .toolkit-wrapper .toolkit-cont:nth-child(1), .farm-products .fresh-product-card .toolkit-wrapper .toolkit-cont:nth-child(2) {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.farm-products .fresh-product-card .toolkit-wrapper .toolkit-cont:nth-child(1) {
+  transition: all 0.4s ease;
+}
+.farm-products .fresh-product-card .toolkit-wrapper .toolkit-cont:nth-child(2) {
+  transition: all 0.5s ease;
+}
+.farm-products .fresh-product-card .toolkit-wrapper .toolkit-cont .toolkit-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #ECECEC;
+  transition: all 0.3s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+}
+.farm-products .fresh-product-card .toolkit-wrapper .toolkit-cont .toolkit-btn:hover {
+  background-color: #016839;
+}
+.farm-products .fresh-product-card .toolkit-wrapper .toolkit-cont .toolkit-card {
+  background-color: #016839;
+  border-radius: 4px;
+  padding: 5px 12px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.5s ease;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+}
+.farm-products .fresh-product-card .toolkit-wrapper .toolkit-cont .toolkit-arrow {
+  width: 12px;
+  height: 12px;
+  background-color: #016839;
+  position: absolute;
+  rotate: 45deg;
+  right: -3px;
+  top: 12px;
+  z-index: -1;
+}
+.farm-products .fresh-product-card .toolkit-wrapper .toolkit-cont .toolkit-btn:hover ~ .toolkit-card {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+.farm-products .fresh-product-card .toolkit-wrapper .toolkit-cont:nth-child(1) .toolkit-card {
+  transition-delay: 0.05s;
+}
+.farm-products .fresh-product-card .toolkit-wrapper .toolkit-cont:nth-child(2) .toolkit-card {
+  transition-delay: 0.1s;
+}
+.farm-products .fresh-product-card .toolkit-wrapper .toolkit-cont:nth-child(3) .toolkit-card {
+  transition-delay: 0.15s;
+}
+.farm-products .fresh-product-card:hover .toolkit-cont:nth-child(1),
+.farm-products .fresh-product-card:hover .toolkit-cont:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0px);
 }/*# sourceMappingURL=custom.css.map */
