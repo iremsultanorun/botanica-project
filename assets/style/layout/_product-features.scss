@@ -1,0 +1,108 @@
+.product-features {
+    margin: 13rem 0 0 0;
+    padding: 0 100px;
+
+    @media screen and (max-width:1000px) {
+        padding: 0 20px;
+    }
+
+    .row 
+        div[class*="col-"] {
+            margin-bottom: 9rem;
+
+            .feature-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: -6rem;
+
+                &_icon-wrapper {
+                    width: 13rem;
+                    height: 13rem;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    background-color: $white;
+
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        left: -2px;
+                        top: -5px;
+                        width: 13rem;
+                        height: 100%;
+                        border-radius: 13rem;
+                        border: 2px dashed $green-200;
+                        clip-path: inset(50% 0 0 0);
+                    }
+
+                    .feature-card__icon-container {
+                        width: 10rem;
+                        height: 10rem;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: $white;
+                        box-shadow: $sm-shadow;
+                        position: relative;
+
+                        .feature-card__icon-halo {
+                            width: 7rem;
+                            height: 7rem;
+                            border-radius: 50%;
+                            align-items: center;
+                            justify-content: center;
+                            position: absolute;
+                            left: 25px;
+                            transition: all .3s linear;
+                            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%2384D812' stroke-width='2' stroke-dasharray='7%2c 10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+                            opacity: 0;
+
+                        }
+
+                        &:hover {
+                            .feature-card__icon-halo {
+                                opacity: 1;
+                                animation: snipper 6s infinite linear;
+                            }
+                        }
+                    }
+
+                    .feature-card__icon-img {
+                        width: 30%;
+                    }
+
+                }
+            }
+
+            .dashed-line {
+                width: 94%;
+                border: 1px dashed $green-200;
+                position: absolute;
+
+                @media screen and (max-width:767px) {
+                    width: 95%;
+                }
+            }
+
+            &:nth-child(2) {
+                .feature-card_icon-wrapper::before {
+                    clip-path: inset(0 0 50% 0) !important;
+                }
+            }
+        }
+    }
+
+@keyframes snipper {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
