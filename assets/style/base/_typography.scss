@@ -12,18 +12,34 @@
     &.active {
         color: $green-200 !important;
     }
+
     font-weight: 500;
     font-size: 13px;
 }
-.md-bold-text{
-@include text(.9rem);
-font-weight:400;
-transition: color .3s ease;
-&:hover{
-    color: $green-500;
+
+.md-bold-text {
+    @include text(.9rem);
+    font-weight: 400;
+    transition: color .3s ease;
+
+    &:hover {
+        color: $green-500;
+    }
 }
-}
+
 .sm-bold-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: $black;
+}
+.section-title{
+    font-size: 34px;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 700;
+}
+.section-subtitle{
+    font-size: 16px;
+    color: $green-500;
+    font-weight: 600;
+margin-bottom: 15px;
 }

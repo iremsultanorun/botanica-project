@@ -1,0 +1,62 @@
+@mixin btn($bg-color, $color, $with-icon-container, $icon-color, $icon-bg-color, $pill-btn) {
+    width: auto;
+    display: flex;
+    align-items: center;
+    color: $color;
+    text-wrap: nowrap;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: $bg-color;
+    transition: all .2s ease-in;
+
+    @if $pill-btn==true {
+        padding: 6px 10px 6px 30px;
+        font-size: 13px;
+        border-radius: 60px;
+        gap: 20px;
+        @media screen and (max-width:1000px) {
+            padding: 4px 8px 4px 28px;
+            font-size: 11px;
+            }   
+    }
+
+    @if $with-icon-container==true {
+        .icon-container {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: $icon-bg-color;
+            color: $icon-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .2s ease-in;
+            @media screen and (max-width:1000px) {
+                width: 40px;
+                height: 40px;
+                }   
+        }
+    }
+}
+
+.pill-btn_explore {
+    @include btn($white, $green-500, true, $white, $green-200, true);
+
+    &:hover {
+        color: $white;
+        background-color: $green-500;
+    }
+}
+.pill-btn_shop {
+    @include btn($green-500, $white, true, $green-500, $white, true);
+
+    &:hover {
+        color: $white;
+        background-color: $green-600;
+        .icon-container{
+            background-color: $green-200;
+        }
+    }
+}
+
