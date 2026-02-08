@@ -4,8 +4,12 @@
 }
 
 .text {
-    @include text(12px);
+    @include text(16px);
     line-height: 1.5rem;
+}
+.sm-text{
+    @include text(13px);
+    line-height: 1.8rem;
 }
 
 .nav-text {
