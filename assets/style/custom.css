@@ -936,55 +936,6 @@
   border-radius: 30%;
 }
 
-.smoothie-cont-1:hover::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  background-color: #ffffff;
-  animation: height-animation 2s ease infinite;
-}
-.smoothie-cont-1:hover::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  height: 100%;
-  background-color: #ffffff;
-  animation: width-animation 2s ease infinite;
-}
-
-@keyframes height-animation {
-  0% {
-    padding: 15rem 0;
-    opacity: 0%;
-    top: 0%;
-  }
-  50% {
-    top: 50%;
-    padding: 0.1px 0;
-    opacity: 50%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-@keyframes width-animation {
-  0% {
-    padding: 0 20rem;
-    opacity: 0%;
-    left: 0%;
-  }
-  50% {
-    left: 50%;
-    padding: 0 0.1px;
-    opacity: 50%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
 * {
   padding: 0;
   margin: 0;
@@ -1831,5 +1782,80 @@ p {
 @media screen and (min-width: 600px) and (max-width: 1000px) {
   .about-main-img {
     width: 60%;
+  }
+}
+.smoothies {
+  margin: 8rem 0;
+  padding: 0 5rem;
+}
+.smoothies .smoothie-container {
+  border-radius: 10px;
+  position: relative;
+}
+.smoothies .smoothie-container:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  animation: height-animation 2s ease infinite;
+}
+.smoothies .smoothie-container:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  animation: width-animation 2s ease infinite;
+}
+.smoothies .smoothie-container .smoothie-content {
+  position: absolute;
+  z-index: 1;
+  left: 30px;
+  top: 35%;
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .smoothies {
+    margin: 5rem 0;
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .smoothies {
+    margin: 5rem 0;
+    padding: 0 1rem;
+  }
+}
+
+@keyframes height-animation {
+  0% {
+    padding: 15rem 0;
+    opacity: 0%;
+    top: 0%;
+  }
+  50% {
+    top: 50%;
+    padding: 0.1px 0;
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes width-animation {
+  0% {
+    padding: 0 20rem;
+    opacity: 0%;
+    left: 0%;
+  }
+  50% {
+    left: 50%;
+    padding: 0 0.1px;
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0%;
   }
 }/*# sourceMappingURL=custom.css.map */

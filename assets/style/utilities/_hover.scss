@@ -102,65 +102,6 @@
     border-radius: 30%;
 }
 
-.smoothie-cont-1:hover {
-    &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        background-color: $white;
-        animation: height-animation 2s ease infinite;
 
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 50%;
-        height: 100%;
-        background-color: $white;
-        animation: width-animation 2s ease infinite;
-    }
-}
-
-@keyframes height-animation {
-    0% {
-        padding: 15rem 0;
-        opacity: 0%;
-        top: 0%;
-
-    }
-
-    50% {
-        top: 50%;
-        padding: .1px 0;
-        opacity: 50%;
-    }
-
-    100% {
-        opacity: 0%;
-    }
-}
-
-@keyframes width-animation {
-    0% {
-        padding: 0 20rem;
-        opacity: 0%;
-        left: 0%;
-
-    }
-
-    50% {
-        left: 50%;
-        padding: 0 .1px;
-        opacity: 50%;
-    }
-
-    100% {
-        opacity: 0%;
-    }
-}
 
 
