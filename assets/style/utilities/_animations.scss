@@ -1,16 +1,20 @@
 .shake-item-container {
-    &:hover .shake-item {
-        animation: shake-animation .8s ease infinite;
+    .shake-item-x {
+        width: 35px;
+    }
+
+    &:hover .shake-item-x {
+        animation: shake-animation-x .8s ease infinite;
     }
 }
 
-.shake-item-container-2 {
-    &:hover .shake-item-2 {
-        animation: shake-animation-2 .8s ease;
+.shake-item-container-y {
+    &:hover .shake-item-y {
+        animation: shake-animation-y .8s ease;
     }
 }
 
-@keyframes shake-animation {
+@keyframes shake-animation-x {
     0% {
         transform: translateX(0);
     }
@@ -33,7 +37,7 @@
 
 }
 
-@keyframes shake-animation-2 {
+@keyframes shake-animation-y {
     0% {
         transform: rotate(0);
     }
