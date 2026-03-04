@@ -13,8 +13,6 @@
         }
     }
 
-
-
     .fresh-product-card {
         .farm-product-images {
             width: 100%;
@@ -61,7 +59,7 @@
             bottom: 1.5rem;
             right: 1.5rem;
 
-            .toolkit-cont {
+            .toolkit-container {
                 position: relative;
                 display: flex;
                 align-items: center;
@@ -69,14 +67,16 @@
                 margin-bottom: 8px;
 
                 &:nth-child(1),
-             &:nth-child(2) {
+                &:nth-child(2) {
                     opacity: 0;
                     transform: translateY(-20px);
                 }
-                &:nth-child(1){
+
+                &:nth-child(1) {
                     transition: all .4s ease;
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     transition: all .5s ease;
                 }
 
@@ -141,14 +141,15 @@
                 }
             }
         }
-        &:hover{
 
-            .toolkit-cont:nth-child(1),
-            .toolkit-cont:nth-child(2) {
-                   opacity: 1;
-                   transform: translateY(0px);
-               }
-            
+        &:hover {
+
+            .toolkit-container:nth-child(1),
+            .toolkit-container:nth-child(2) {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+
         }
     }
 
