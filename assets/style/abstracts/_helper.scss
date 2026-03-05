@@ -1,144 +1,18 @@
-// custom attribute generator
 $custom: (
-    // renkler
-    bg-green-900:(background-color, $green-900),
-    bg-black:(background-color, $black),
     bg-green-500:(background-color, $green-500),
-    bg-green-600:(background-color, $green-600),
-    bg-green-300:(background-color, $green-300),
     bg-green-200:(background-color, $green-200),
-    bg-green-100:(background-color, $green-100),
     bg-green-50:(background-color, $green-50),
-    bg-green-150:(background-color, $green-150),
     bg-light-gray:(background-color, $light-gray),
     bg-blue-200:(background-color, $blue-200),
     bg-light-gray-100:(background-color, $light-gray-100),
+
     text-light-gray:(color, $light-gray),
-    bg-deals-slider-green:(background-color, $deals-slider-green),
-    bg-deals-slider-pink:(background-color, $deals-slider-pink),
-    bg-deals-slider-purple:(background-color, $deals-slider-purple),
-    bg-white:(background-color, $white),
     text-green-500:(color, $green-500),
     text-green-200:(color, $green-200),
 
-
-    // boyutlar
-    w-1-5:(width, 1.1rem),
-    h-1-5:(height, 1.1rem),
-    w-1:(width, .8rem),
-    h-1:(height, .8rem),
-    w-05:(width, .4rem),
-    h-05:(height, .4rem),
-    h-2:(height, 2px),
-    h-4:(height, 4px),
-
-    w-4:(width, 4rem),
-    w-3:(width, 3rem),
-    h-3:(height, 3rem),
-    w-7:(width, 7rem),
-    w-8:(width, 8rem),
-    h-8:(height, 8rem),
-    w-10:(width, 10rem),
-    h-10:(height, 10rem),
-    w-20:(width, 13rem),
-    h-20:(height, 13rem),
-    w-33:(width, 33%),
-    w-60:(width, 210rem),
-    // h-46:(height, 46px),
-    w-40:(width, 40%),
-    wy-30:(width, 30%),
-    // w-46:(width, 46pxx),
-    // w-49:(width, 49px),
-    // h-49:(height, 49px),
-    w-70:(width, 70%),
-    w-80:(width, 80%),
-    w-90:(width, 90%),
-    h-51:(height, 51px),
-    w-55:(width, 55px),
-    h-55:(height, 55px),
-    w-18:(width, 18px),
-    h-18:(height, 18px),
-    w-30:(width, 30px),
-    w-35:(width, 35px),
-    h-50:(height, 50%),
-    w-120:(width, 31rem),
-    h-120:(height, 31rem),
-    h-130:(height, 23rem),
-    w-130:(width, 23rem),
-    w-110:(width, 64rem),
-    w-fit:(width, fit-content),
-    // font özellikleri
-    bold-700:(font-weight, 700),
-    fs-9:(font-size, 9px),
-    fs-10:(font-size, 10px),
-    fs-7:(font-size, .8rem),
-    fs-13:(font-size, 13px),
-    fs-15:(font-size, 15px),
-    fs-12:(font-size, 12px),
-    fs-11:(font-size, 11px),
-    fs-09:(font-size, 3.5rem),
-    // boşluklar
-    top-15:(top, 7%),
-    top-25:(top, 25%),
-    top-40:(top, 40%),
-    bottom-23:(bottom, 10%),
-    top-85:(top, 15.5rem),
-    topn-4:(top, -4px),
-    top-12:(top, 12rem),
-    topn-12:(top, -12rem),
-    top-13:(top, 12.5rem),
-    start-2:(left, 2rem),
-    start-5-5:(left, 5.5rem),
-    start-6:(left, 6rem),
-    endn-3:(right, -3px),
-    gap-6:(gap, 4rem),
-    start-5:(left, 5rem),
-    start-10:(left, 10rem),
-    start-30:(left, 30rem),
-    start-40:(left, 35rem),
-    start-45:(left, 41rem),
-    startn-5:(left, -4.6rem),
-    top-1:(top, 1rem),
-
-
-    bottomn-8:(bottom, -30rem),
-    bottom-1-5:(bottom, 1.5rem),
-    end-1-5:(right, 1.5rem),
-    mt-13:(margin-top, 13rem),
-    mb-15:(margin-bottom, 40rem),
-    mt-6:(margin-top, 6rem),
-    pt-6:(padding-top, 6rem),
-
-    my-6:(margin, 6rem 0),
-
-    mb-6:(margin-bottom, 6rem),
-    mx-6:(margin, 0 5.5rem),
-    px-6:(padding, 0 6rem),
-    mtn-6:(margin-top, -6rem),
-    p-7:(padding, 6rem),
-    pb-6:(padding-bottom, 8rem),
-
-
-    // border
-    border-light-500:(border, 1.5px solid $green-700),
     border-green-500:(border, 1px solid $green-500),
-    rounded-30:(border-radius, 30%),
-    rounded-10:(border-radius, 10%),
 
-
-
-    // line height
-    lh-2:(line-height, 2rem),
-    // transform
-    rotate-40:(transform, rotate(48deg)),
-
-    // z
     z-1:(z-index, 1),
-    z-10:(z-index, 10),
-    zn-1:(z-index, -1),
-    zn-2:(z-index, -2),
-
-
 );
 
 
@@ -233,15 +107,6 @@ $custom: (
     opacity: 60%;
 }
 
-
-
-.text-decoration-line-through {
-    text-decoration: line-through !important;
-    text-decoration-color: red !important;
-}
-
-
-
 .video-cont {
     width: 100%;
     height: 100dvh;
@@ -268,11 +133,77 @@ $custom: (
 
 }
 
+
+
+
+.text-decoration-line-through {
+    text-decoration: line-through !important;
+    text-decoration-color: red !important;
+}
+
+
+
+
+
+
+.outline-dashed {
+    border-bottom: 3px dashed $green-200;
+}
+
+.blog-card {
+    transition: transform .3s ease;
+
+    .blog-card:hover {
+        transform: translateY(-10px);
+
+    }
+}
+
+.subscribe {
+    .form-control::placeholder {
+        color: $white;
+        font-size: 13px;
+    }
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+
+    .slider-pagination_dot {
+        width: 1.1rem;
+        height: 1.1rem;
+        border-radius: 50%;
+        border: 1px solid $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .slider-pagination_dot-circle {
+            width: .4rem;
+            height: .4rem;
+            background-color: $green-200 ;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    }
+
+    .slider-pagination_dot.slider-pagination_dot-active {
+        border: 1px solid $green-500;
+
+        &> .slider-pagination_dot-circle {
+            background-color: $green-500;
+        }
+    }
+}
 .arrows-container {
     position: absolute;
-    top: 25%; //testiminoal
-    left: -15%; //testiminoal 
-    width: 130%; //testiminoal
+    top: 25%;
+    left: -15%;
+    width: 130%;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -339,60 +270,15 @@ $custom: (
             }
         }
     }
-}
-
-
-
-.outline-dashed {
-    border-bottom: 3px dashed $green-200;
-}
-
-.blog-card {
-    transition: transform .3s ease;
-
-    .blog-card:hover {
-        transform: translateY(-10px);
-
-    }
-}
-
-.subscribe {
-    .form-control::placeholder {
-        color: $white;
-        font-size: 13px;
-    }
-}
-
-.slider-pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 30px;
-
-    .slider-pagination_dot {
-        width: 1.1rem;
-        height: 1.1rem;
-        border-radius: 50%;
-        border: 1px solid $white;
+    @media screen and (max-width:500px) {
+        position: absolute;
+        top: 25%;
+        left: -38%;
+        width: 180%;
+        padding: 0 20px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .slider-pagination_dot-circle {
-            width: .4rem;
-            height: .4rem;
-            background-color: $green-200 ;
-            border-radius: 50%;
-            display: inline-block;
-        }
-    }
-
-    .slider-pagination_dot.slider-pagination_dot-active {
-        border: 1px solid $green-500;
-
-        &> .slider-pagination_dot-circle {
-            background-color: $green-500;
-        }
+        justify-content: space-between;
+        visibility: visible;
+    
     }
 }
