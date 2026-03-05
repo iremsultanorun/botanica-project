@@ -1,0 +1,164 @@
+.testimonial-section{
+margin-bottom: 40rem;
+}
+
+.video-section{
+    position: relative;
+    height: 110vh;
+    overflow: hidden;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.419);
+top: 0;
+left: 0;
+    }
+}
+
+
+
+.video-bg{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.video-bg video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.video-content{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.testimonial-wrapper {
+    position: absolute;
+    top: 40rem;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-card {
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $blue-200;
+    padding: 40px 0;
+    border-radius: 16px;
+
+}
+
+
+.testimonial-avatars img {
+    border-radius: 50%;
+}
+
+.avatar {
+    width: 4rem;
+    height: 4rem;
+    opacity: .6;
+}
+
+.avatar-active {
+    width: 5rem;
+    height: 5rem;
+    opacity: 1;
+}
+
+
+.testimonial-arrows {
+    position: absolute;
+    top: 25%;
+    left: -15%;
+    width: 130%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    visibility: visible;
+
+    .arrow {
+        background: $white;
+        transition: all .3s ease-out;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 16px;
+        padding: 0 16px;
+        box-shadow: $sm-shadow;
+
+        &.arrow-left {
+            transform: rotate(90deg);
+        }
+
+        &.arrow-right {
+            transform: rotate(-90deg);
+        }
+
+
+
+        .line {
+            width: 1px;
+            height: 1rem;
+            display: inline-block;
+            background-color: $black;
+            transition: all .4s ease-in-out;
+
+
+            &.line-1 {
+                transform: rotate(45deg);
+                margin-bottom: -5px;
+
+            }
+
+            &.line-2 {
+                transform: rotate(-45deg);
+                margin-left: -12px;
+                margin-top: 4px;
+
+            }
+        }
+
+        &:hover {
+            background-color: $green-500;
+            cursor: pointer;
+
+            .line-1 {
+                transform: rotate(20deg);
+                margin-right: 6px;
+                margin-top: -3px;
+            }
+
+            .line-2 {
+                transform: rotate(-20deg);
+                margin-top: 2px;
+            }
+        }
+    }
+    @media screen and (max-width:500px) {
+        position: absolute;
+        top: 25%;
+        left: -38%;
+        width: 180%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        visibility: visible;
+    
+    }
+}

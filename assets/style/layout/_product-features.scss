@@ -16,7 +16,6 @@
                 align-items: center;
                 justify-content: center;
                 margin-top: -6rem;
-
                 &_icon-wrapper {
                     width: 13rem;
                     height: 13rem;
@@ -80,7 +79,7 @@
             }
 
             .dashed-line {
-                width: 94%;
+                width: 100%;
                 border: 1px dashed $green-200;
                 position: absolute;
 
