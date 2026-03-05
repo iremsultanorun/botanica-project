@@ -11,6 +11,10 @@
     @include text(13px);
     line-height: 1.8rem;
 }
+.xs-text{
+    @include text(10px);
+    line-height: 1.8rem;
+}
 
 .nav-text {
     &.active {
