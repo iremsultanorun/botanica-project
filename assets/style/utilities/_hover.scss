@@ -1,4 +1,3 @@
-//navdaki hoverlar
 .text-green-200-hover {
     transition: color .2s ease-in;
 
@@ -16,7 +15,6 @@
     }
 }
 
-//top categories
 .text-green-500-hover {
     transition: color .2s ease-in;
 
@@ -57,17 +55,17 @@
 @mixin scale-effect{
     overflow: hidden;
     .scale-item {
+        height: 100%;
         transition: transform .3s ease-out;
+      transform:scale(1.30);
     }
     &:hover .scale-item {
-        transform: scale(1.1);
+        transform: scale(1.35);
     }
 }
 .scale-effect {
 @include scale-effect;
 }
-
-
 
 .bg-green-900-hover {
     transition: background-color .2s ease-in;

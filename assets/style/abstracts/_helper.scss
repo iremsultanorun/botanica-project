@@ -150,10 +150,10 @@ $custom: (
     border-bottom: 3px dashed $green-200;
 }
 
-.blog-card {
+.translate-y-effect {
     transition: transform .3s ease;
 
-    .blog-card:hover {
+    .translate-y-effect:hover {
         transform: translateY(-10px);
 
     }
