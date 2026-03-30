@@ -1511,6 +1511,9 @@ p {
   background-color: #ffffff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
+  overflow: hidden;
+  min-height: 240px;
+  max-height: 240px;
 }
 .top-trending .top-trending-card::after {
   content: "";
@@ -1604,7 +1607,8 @@ p {
 }
 @media screen and (max-width: 767px) {
   .top-trending .top-trending-card {
-    min-height: 300px;
+    min-height: 450px;
+    max-height: 450px;
     gap: 5px;
   }
   .top-trending .top-trending-card .top-trending-images {

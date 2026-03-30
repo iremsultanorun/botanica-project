@@ -30,7 +30,9 @@
         background-color: $white;
         box-shadow: $sm-shadow;
         cursor: pointer;
-    
+        overflow: hidden;
+        min-height: 240px;
+        max-height: 240px;
         &::after {
             content: "";
             position: absolute;
@@ -148,7 +150,8 @@
         }
     
         @media screen and (max-width:767px) {
-            min-height: 300px;
+            min-height: 450px;
+            max-height: 450px;
             gap: 5px;
     
             .top-trending-images {
